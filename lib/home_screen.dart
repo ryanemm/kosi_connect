@@ -17,7 +17,7 @@ class HomeScreen extends StatefulWidget {
 class _HomeScreenState extends State<HomeScreen> {
   List<Widget> sectionsDesktop = [
     TopSection(),
-    AboutSection(),
+    //AboutSection(),
     ServiceSection(),
     RecentWork(),
     Testimonials(),
