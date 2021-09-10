@@ -12,7 +12,7 @@ class ServiceSectionDesktop extends StatelessWidget {
       child: Stack(
         children: [
           Container(
-            padding: EdgeInsets.only(bottom: 90, left: 20, right: 20),
+            padding: EdgeInsets.only(top: 25, bottom: 90, left: 20, right: 20),
             width: _screenSize.width,
             decoration: BoxDecoration(
               color: Colors.white,
@@ -31,14 +31,15 @@ class ServiceSectionDesktop extends StatelessWidget {
                   children: [
                     ServiceCard(index: 0),
                     ServiceCard(index: 1),
+                    ServiceCard(index: 2)
                   ],
                 )
               ],
             ),
           ),
-          Positioned(
+          /* Positioned(
             left: 110,
-            top: 70,
+            top: 280,
             child: AnimatedTextKit(
               totalRepeatCount: 10,
               animatedTexts: [
@@ -50,7 +51,7 @@ class ServiceSectionDesktop extends StatelessWidget {
                         color: Colors.grey[700]))
               ],
             ),
-          )
+          )*/
         ],
       ),
     );

@@ -21,8 +21,8 @@ class _ServiceCardState extends State<ServiceCard> {
   @override
   Widget build(BuildContext context) {
     return Container(
-      height: 380,
-      width: 400,
+      height: 340,
+      width: 350,
       decoration: BoxDecoration(
         color: Colors.grey[200],
         shape: BoxShape.rectangle,
@@ -34,22 +34,22 @@ class _ServiceCardState extends State<ServiceCard> {
           top: 0,
           child: Container(
             padding: EdgeInsets.all(15),
-            height: 380,
-            width: 400,
+            height: 340,
+            width: 350,
             decoration: BoxDecoration(
-              color: Colors.white,
+              color: Color(0xFFFFBF00),
               shape: BoxShape.rectangle,
               borderRadius: BorderRadius.circular(10),
               boxShadow: [
                 BoxShadow(
                   offset: Offset(-3, -3),
                   blurRadius: 10,
-                  color: Colors.grey.shade200,
+                  color: Colors.grey.shade400,
                 ),
                 BoxShadow(
                   offset: Offset(3, 3),
                   blurRadius: 10,
-                  color: Colors.grey.shade200,
+                  color: Colors.grey.shade400,
                 ),
               ],
             ),
@@ -64,28 +64,34 @@ class _ServiceCardState extends State<ServiceCard> {
                 Text(
                   services[widget.index].title,
                   textAlign: TextAlign.center,
-                  style: GoogleFonts.novaRound(fontSize: 30),
+                  style: GoogleFonts.novaRound(
+                      fontSize: 30,
+                      fontWeight: FontWeight.w700,
+                      color: Color(0xFF003049)),
                 ),
                 SizedBox(height: 10),
                 Text(
                   services[widget.index].info,
                   textAlign: TextAlign.center,
-                  style: GoogleFonts.nunito(fontSize: 20),
+                  style:
+                      GoogleFonts.nunito(fontSize: 20, color: Colors.grey[800]),
                 ),
                 SizedBox(height: 15),
                 Container(
-                    padding: EdgeInsets.all(6),
+                    padding:
+                        EdgeInsets.only(bottom: 6, top: 6, left: 50, right: 50),
                     decoration: BoxDecoration(
-                      gradient: LinearGradient(
-                          colors: [Colors.blue, Colors.purpleAccent]),
-                      borderRadius: BorderRadius.circular(5),
+                      color: Color(0xFF003049),
+                      borderRadius: BorderRadius.circular(25),
                     ),
                     child: TextButton(
                       onPressed: () {},
                       child: Text(
                         "Enquire",
                         style: GoogleFonts.nunito(
-                            fontWeight: FontWeight.w400, color: Colors.white),
+                            fontWeight: FontWeight.w400,
+                            color: Colors.white,
+                            fontSize: 16),
                       ),
                     )),
               ],

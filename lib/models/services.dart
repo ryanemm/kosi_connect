@@ -27,4 +27,10 @@ List<Service> services = [
     info:
         "Bringing your app idea to life. Have you thought of the next \n big thing? Or you want to simplify and automate \n a business process?",
   ),
+  Service(
+      id: 3,
+      title: "Custom Software",
+      image: "assets/images/web_dev_fill.png",
+      info:
+          "Designing and developing beautiful and functional websites. \nCreate an online home for your business to showcase\n your services and products.")
 ];
