@@ -139,7 +139,7 @@ class ProjectCardMobile extends StatelessWidget {
                   padding: EdgeInsets.all(6),
                   decoration: BoxDecoration(
                     gradient: LinearGradient(
-                        colors: [Colors.blue, Colors.purpleAccent]),
+                        colors: [Color(0xFFFFBF00), Colors.orange]),
                     borderRadius: BorderRadius.circular(5),
                   ),
                   child: (TextButton(
@@ -153,7 +153,7 @@ class ProjectCardMobile extends StatelessWidget {
                         Text(
                           "View Project",
                           style: GoogleFonts.nunito(
-                              fontWeight: FontWeight.w300, color: Colors.white),
+                              fontWeight: FontWeight.w300, color: Color(0xFF003049)),
                         ),
                       ],
                     ),

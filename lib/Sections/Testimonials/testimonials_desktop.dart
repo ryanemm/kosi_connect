@@ -8,26 +8,25 @@ class TestimonialsDesktop extends StatelessWidget {
   Widget build(BuildContext context) {
     return Container(
       color: Colors.white,
-      padding: EdgeInsets.only(left: 130, top: 30, bottom: 80, right: 130),
+      padding: EdgeInsets.only(left: 130, top: 20, bottom: 80, right: 130),
       child: Column(
         children: [
-          Row(
-            mainAxisAlignment: MainAxisAlignment.start,
-            children: [
-              AnimatedTextKit(
-                totalRepeatCount: 10,
-                animatedTexts: [
-                  TypewriterAnimatedText("<client testimonials>",
-                      speed: Duration(milliseconds: 100),
-                      textStyle: GoogleFonts.nunito(
-                          fontSize: 32,
-                          fontWeight: FontWeight.w600,
-                          color: Colors.grey[800]))
-                ],
-              ),
-            ],
+          Center(
+            child: AnimatedTextKit(
+              totalRepeatCount: 10,
+              animatedTexts: [
+                TypewriterAnimatedText(
+                  "<CLIENT TESTIMONIALS>",
+                  speed: Duration(milliseconds: 100),
+                  textStyle: GoogleFonts.novaRound(
+                      fontSize: 26,
+                      fontWeight: FontWeight.w500,
+                      color: Color(0xFF003049)),
+                )
+              ],
+            ),
           ),
-          SizedBox(height: 30),
+          SizedBox(height: 50),
           Center(
             child: Testimonial(),
           ),

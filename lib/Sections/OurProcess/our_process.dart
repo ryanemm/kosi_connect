@@ -18,26 +18,24 @@ class OurProcess extends StatelessWidget {
             height: 80,
             direction: ArcDirection.Outside),
         child: Container(
-          padding: EdgeInsets.only(left: 130, right: 100, top: 40, bottom: 40),
+          padding: EdgeInsets.only(left: 130, right: 100, top: 30, bottom: 40),
           color: Colors.white,
           child: Column(
             children: [
-              Row(
-                children: [
-                  AnimatedTextKit(
-                    totalRepeatCount: 10,
-                    animatedTexts: [
-                      TypewriterAnimatedText("<our process>",
-                          speed: Duration(milliseconds: 100),
-                          textStyle: GoogleFonts.nunito(
-                              fontSize: 32,
-                              fontWeight: FontWeight.w600,
-                              color: Color(0xFF003049)))
-                    ],
-                  ),
-                ],
+              Center(
+                child: AnimatedTextKit(
+                  totalRepeatCount: 10,
+                  animatedTexts: [
+                    TypewriterAnimatedText("<OUR PROCESS>",
+                        speed: Duration(milliseconds: 100),
+                        textStyle: GoogleFonts.novaRound(
+                            fontSize: 26,
+                            fontWeight: FontWeight.w600,
+                            color: Color(0xFF003049)))
+                  ],
+                ),
               ),
-              SizedBox(height: 20),
+              SizedBox(height: 30),
               Center(
                 child: Column(
                   children: [

@@ -21,16 +21,16 @@ List<Service> services = [
         "Designing and developing beautiful and functional websites. \nCreate an online home for your business to showcase\n your services and products.",
   ),
   Service(
-    id: 2,
+    id: 3,
     title: "Mobile Development",
     image: "assets/images/mobile_dev_fill.png",
     info:
         "Bringing your app idea to life. Have you thought of the next \n big thing? Or you want to simplify and automate \n a business process?",
   ),
   Service(
-      id: 3,
+      id: 2,
       title: "Custom Software",
-      image: "assets/images/web_dev_fill.png",
+      image: "assets/images/custom_software.png",
       info:
-          "Designing and developing beautiful and functional websites. \nCreate an online home for your business to showcase\n your services and products.")
+          "Solutions that are tailored to your needs. From administration\n  and management software to automate your company's\n workflow to web based systems.  ")
 ];

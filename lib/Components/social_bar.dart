@@ -9,12 +9,12 @@ class SocialBar extends StatelessWidget {
       child: Column(
         children: [
           GestureDetector(
-              child: Image.asset("assets/images/logos/github.png", height: 40),
+              child: Image.asset("assets/images/logos/facebook.png", height: 40),
               onTap: () => launch("https://github.com/ryanemm")),
           SizedBox(height: 12),
           GestureDetector(
               child: Image.asset("assets/images/logos/twitter.png", height: 40),
-              onTap: () => launch("https://twitter.com/EmasonRyan")),
+              onTap: () => launch("https://twitter.com/KosiConnect")),
           SizedBox(height: 12),
           GestureDetector(
               child:

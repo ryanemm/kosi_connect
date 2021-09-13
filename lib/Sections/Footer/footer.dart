@@ -18,7 +18,7 @@ class Footer extends StatelessWidget {
           mainAxisAlignment: MainAxisAlignment.spaceAround,
           children: [
             Text(
-              "© 2021 Ryan Emason. All rights reserved.",
+              "© 2021 Kosi Connect. All rights reserved.",
               style: GoogleFonts.novaRound(
                   fontWeight: FontWeight.w300,
                   color: Colors.grey[300],

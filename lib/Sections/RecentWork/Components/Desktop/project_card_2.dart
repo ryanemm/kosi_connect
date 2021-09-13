@@ -114,7 +114,7 @@ class ProjectCard2 extends StatelessWidget {
                     padding: EdgeInsets.all(6),
                     decoration: BoxDecoration(
                       gradient: LinearGradient(
-                          colors: [Colors.blue, Colors.purpleAccent]),
+                          colors: [Color(0xFFFFBF00), Colors.orange]),
                       borderRadius: BorderRadius.circular(5),
                     ),
                     child: (TextButton(
@@ -122,7 +122,7 @@ class ProjectCard2 extends StatelessWidget {
                         mainAxisAlignment: MainAxisAlignment.spaceBetween,
                         children: [
                           Icon(
-                            Icons.remove_red_eye,
+                             Icons.remove_red_eye,
                             color: Colors.white,
                           ),
                           SizedBox(width: 4),
@@ -130,7 +130,7 @@ class ProjectCard2 extends StatelessWidget {
                             "VIEW PROJECT",
                             style: GoogleFonts.nunito(
                                 fontWeight: FontWeight.w400,
-                                color: Colors.white),
+                                color: Color(0xFF003049)),
                           ),
                         ],
                       ),

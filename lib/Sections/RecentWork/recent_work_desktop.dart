@@ -21,7 +21,7 @@ class RecentWorkDesktop extends StatelessWidget {
             direction: ArcDirection.Outside,
             height: 80),
         child: Container(
-          padding: EdgeInsets.only(bottom: 90, left: 130, right: 100, top: 60),
+          padding: EdgeInsets.only(bottom: 90, left: 130, right: 100, top: 30),
           width: _screenSize.width,
           decoration: BoxDecoration(
             color: Colors.grey[200],
@@ -29,23 +29,20 @@ class RecentWorkDesktop extends StatelessWidget {
           child: Column(
             mainAxisAlignment: MainAxisAlignment.center,
             children: [
-              Row(
-                mainAxisAlignment: MainAxisAlignment.start,
-                children: [
-                  AnimatedTextKit(
-                    totalRepeatCount: 10,
-                    animatedTexts: [
-                      TypewriterAnimatedText("<recent work>",
-                          speed: Duration(milliseconds: 100),
-                          textStyle: GoogleFonts.nunito(
-                              fontSize: 32,
-                              fontWeight: FontWeight.w600,
-                              color: Colors.grey[800]))
-                    ],
-                  ),
-                ],
+              Center(
+                child: AnimatedTextKit(
+                  totalRepeatCount: 10,
+                  animatedTexts: [
+                    TypewriterAnimatedText("<RECENT PROJECTS>",
+                        speed: Duration(milliseconds: 100),
+                        textStyle: GoogleFonts.novaRound(
+                            fontSize: 26,
+                            fontWeight: FontWeight.w600,
+                            color: Color(0xFF003049)))
+                  ],
+                ),
               ),
-              SizedBox(height: 30),
+              SizedBox(height: 50),
               ProjectCard2(),
               SizedBox(height: 50),
               ProjectCardMobile(),

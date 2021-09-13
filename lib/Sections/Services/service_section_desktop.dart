@@ -28,7 +28,7 @@ class ServiceSectionDesktop extends StatelessWidget {
               Center(
                 child: Image.asset(
                   "assets/images/web_dev_graphic.png",
-                  height: 220,
+                  height: 200,
                 ),
               ),
               SizedBox(height: 30),
