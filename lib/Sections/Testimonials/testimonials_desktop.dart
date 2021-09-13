@@ -20,7 +20,7 @@ class TestimonialsDesktop extends StatelessWidget {
                   speed: Duration(milliseconds: 100),
                   textStyle: GoogleFonts.novaRound(
                       fontSize: 26,
-                      fontWeight: FontWeight.w500,
+                      fontWeight: FontWeight.w600,
                       color: Color(0xFF003049)),
                 )
               ],

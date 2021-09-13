@@ -44,8 +44,8 @@ class _ServiceCardState extends State<ServiceCard> {
                   services[widget.index].title,
                   textAlign: TextAlign.center,
                   style: GoogleFonts.novaRound(
-                      fontSize: 30,
-                      fontWeight: FontWeight.w700,
+                      fontSize: 26,
+                      fontWeight: FontWeight.w600,
                       color: Color(0xFF003049)),
                 ),
                 SizedBox(height: 10),
@@ -66,9 +66,9 @@ class _ServiceCardState extends State<ServiceCard> {
                     child: TextButton(
                       onPressed: () {},
                       child: Text(
-                        "Enquire",
+                        "ENQUIRE",
                         style: GoogleFonts.nunito(
-                            fontWeight: FontWeight.w400,
+                            fontWeight: FontWeight.w600,
                             color: Color(0xFF003049),
                             fontSize: 16),
                       ),

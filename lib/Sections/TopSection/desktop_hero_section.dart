@@ -46,20 +46,20 @@ class DesktopHeroSection extends StatelessWidget {
                           Text(
                             "Services",
                             style: GoogleFonts.nunito(
-                                color: Colors.grey[900], fontSize: 18),
+                                color: Color(0xFF003049), fontSize: 18, fontWeight: FontWeight.w600),
                           ),
                           SizedBox(width: 50),
                           OutlineGradientButton(
                             child: Text(
                               "Contact",
                               style: GoogleFonts.nunito(
-                                  color: Colors.grey.shade800, fontSize: 18),
+                                  color: Color(0xFF003049), fontSize: 18, fontWeight: FontWeight.w600),
                             ),
                             gradient: LinearGradient(colors: [
-                              Colors.grey.shade800,
-                              Colors.grey.shade800
+                              Color(0xFF003049),
+                              Color(0xFF003049)
                             ]),
-                            strokeWidth: 2,
+                            strokeWidth: 3,
                             padding: EdgeInsets.all(10),
                             inkWell: true,
                             onTap: () {},
@@ -84,7 +84,7 @@ class DesktopHeroSection extends StatelessWidget {
                               text: TextSpan(
                                 style: GoogleFonts.novaRound(
                                     fontSize: 70,
-                                    color: Colors.blueGrey[800],
+                                    color: Color(0xFF003049),
                                     fontWeight: FontWeight.w500),
                                 children: [
                                   TextSpan(text: "SOFTWARE "),

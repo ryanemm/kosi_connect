@@ -105,17 +105,17 @@ class ProjectCard2 extends StatelessWidget {
                     child: Text(
                       "A business portfolio for Ellie Writes' service. For all your professional writing services, copywriting, career and interview counselling.",
                       style:
-                          GoogleFonts.nunito(color: Colors.blue, fontSize: 16),
+                          GoogleFonts.nunito(color: Color(0xFF003049), fontSize: 16),
                       textAlign: TextAlign.justify,
                     ),
                   ),
                   SizedBox(height: 25),
                   Container(
-                    padding: EdgeInsets.all(6),
+                    padding: EdgeInsets.only(top: 6, bottom: 6, left: 20, right: 20),
                     decoration: BoxDecoration(
                       gradient: LinearGradient(
                           colors: [Color(0xFFFFBF00), Colors.orange]),
-                      borderRadius: BorderRadius.circular(5),
+                      borderRadius: BorderRadius.circular(20),
                     ),
                     child: (TextButton(
                       child: Row(
@@ -123,13 +123,13 @@ class ProjectCard2 extends StatelessWidget {
                         children: [
                           Icon(
                              Icons.remove_red_eye,
-                            color: Colors.white,
+                            color: Color(0xFF003049),
                           ),
                           SizedBox(width: 4),
                           Text(
                             "VIEW PROJECT",
                             style: GoogleFonts.nunito(
-                                fontWeight: FontWeight.w400,
+                                fontWeight: FontWeight.w600,
                                 color: Color(0xFF003049)),
                           ),
                         ],
