@@ -3,6 +3,7 @@ import 'package:kosi_connect/Components/social_bar.dart';
 import 'package:kosi_connect/Sections/AboutSection/about_section.dart';
 import 'package:kosi_connect/Sections/Contact/contact_section.dart';
 import 'package:kosi_connect/Sections/Footer/footer.dart';
+import 'package:kosi_connect/Sections/OurProcess/our_process.dart';
 import 'package:kosi_connect/Sections/Services/service_section.dart';
 import 'package:kosi_connect/Sections/RecentWork/recent_work.dart';
 
@@ -19,6 +20,7 @@ class _HomeScreenState extends State<HomeScreen> {
     TopSection(),
     //AboutSection(),
     ServiceSection(),
+    OurProcess(),
     RecentWork(),
     Testimonials(),
     //ContactSection(),

@@ -23,11 +23,7 @@ class _ServiceCardState extends State<ServiceCard> {
     return Container(
       height: 340,
       width: 350,
-      decoration: BoxDecoration(
-        color: Colors.grey[200],
-        shape: BoxShape.rectangle,
-        borderRadius: BorderRadius.circular(10),
-      ),
+    
       child: Stack(children: [
         Positioned(
           left: 0,
@@ -36,23 +32,6 @@ class _ServiceCardState extends State<ServiceCard> {
             padding: EdgeInsets.all(15),
             height: 340,
             width: 350,
-            decoration: BoxDecoration(
-              color: Color(0xFFFFBF00),
-              shape: BoxShape.rectangle,
-              borderRadius: BorderRadius.circular(10),
-              boxShadow: [
-                BoxShadow(
-                  offset: Offset(-3, -3),
-                  blurRadius: 10,
-                  color: Colors.grey.shade400,
-                ),
-                BoxShadow(
-                  offset: Offset(3, 3),
-                  blurRadius: 10,
-                  color: Colors.grey.shade400,
-                ),
-              ],
-            ),
             child: Column(
               mainAxisAlignment: MainAxisAlignment.center,
               children: [
@@ -81,7 +60,7 @@ class _ServiceCardState extends State<ServiceCard> {
                     padding:
                         EdgeInsets.only(bottom: 6, top: 6, left: 50, right: 50),
                     decoration: BoxDecoration(
-                      color: Color(0xFF003049),
+                      color: Color(0xFFFFBF00),
                       borderRadius: BorderRadius.circular(25),
                     ),
                     child: TextButton(
@@ -90,7 +69,7 @@ class _ServiceCardState extends State<ServiceCard> {
                         "Enquire",
                         style: GoogleFonts.nunito(
                             fontWeight: FontWeight.w400,
-                            color: Colors.white,
+                            color: Color(0xFF003049),
                             fontSize: 16),
                       ),
                     )),
