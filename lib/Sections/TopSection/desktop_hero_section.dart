@@ -9,16 +9,16 @@ class DesktopHeroSection extends StatelessWidget {
     Size screenSize = MediaQuery.of(context).size;
     return Container(
       padding: EdgeInsets.only(bottom: 15),
-      color: Colors.white,
+      color: Colors.grey[200],
       child: ShapeOfView(
         elevation: 6,
-        height: screenSize.height * 0.8,
-        shape: DiagonalShape(
-            position: DiagonalPosition.Bottom,
-            angle: DiagonalAngle.deg(angle: 4),
-            direction: DiagonalDirection.Right),
+        height: screenSize.height * 0.75,
+        shape: ArcShape(
+            position: ArcPosition.Bottom,
+            height: 80,
+            direction: ArcDirection.Outside),
         child: Container(
-            padding: EdgeInsets.only(top: 40, left: 40, right: 60, bottom: 140),
+            padding: EdgeInsets.only(top: 40, left: 40, right: 60, bottom: 90),
             alignment: Alignment.center,
             width: screenSize.width,
             height: screenSize.height,

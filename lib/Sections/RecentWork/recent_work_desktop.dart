@@ -15,16 +15,16 @@ class RecentWorkDesktop extends StatelessWidget {
       padding: EdgeInsets.only(bottom: 60),
       color: Colors.white,
       child: ShapeOfView(
-        elevation: 10,
-        shape: DiagonalShape(
-            position: DiagonalPosition.Bottom,
-            direction: DiagonalDirection.Right,
-            angle: DiagonalAngle.deg(angle: 4)),
+        elevation: 6,
+        shape: ArcShape(
+            position: ArcPosition.Bottom,
+            direction: ArcDirection.Outside,
+            height: 80),
         child: Container(
           padding: EdgeInsets.only(bottom: 90, left: 130, right: 100, top: 60),
           width: _screenSize.width,
           decoration: BoxDecoration(
-            color: Colors.grey[50],
+            color: Colors.grey[200],
           ),
           child: Column(
             mainAxisAlignment: MainAxisAlignment.center,

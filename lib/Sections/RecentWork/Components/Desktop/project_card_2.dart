@@ -27,11 +27,11 @@ class ProjectCard2 extends StatelessWidget {
                 //mainAxisAlignment: MainAxisAlignment.spaceBetween,
                 children: [
                   Text(
-                    "Ellie Whyppe Writes",
+                    "Student Management System",
                     style: GoogleFonts.novaRound(
                       fontSize: 24,
                       fontWeight: FontWeight.w600,
-                      color: Color.fromARGB(255, 0, 0, 50),
+                      color: Color(0xFF003049),
                     ),
                   ),
                   SizedBox(height: 10),
@@ -41,7 +41,7 @@ class ProjectCard2 extends StatelessWidget {
                       Container(
                         padding: EdgeInsets.all(10),
                         decoration: BoxDecoration(
-                            color: Color.fromARGB(255, 0, 0, 50),
+                            color: Color(0xFF003049),
                             borderRadius: BorderRadius.only(
                               topLeft: Radius.circular(5),
                               bottomLeft: Radius.circular(5),
@@ -65,32 +65,32 @@ class ProjectCard2 extends StatelessWidget {
                         ),
                       ),
                       SizedBox(width: 10),
-                             Container(
-                      padding: EdgeInsets.all(10),
-                      decoration: BoxDecoration(
-                          color: Color.fromARGB(255, 0, 0, 50),
-                          borderRadius: BorderRadius.only(
-                            topLeft: Radius.circular(5),
-                            bottomLeft: Radius.circular(5),
-                          )),
-                      child: Text(
-                        "PHP",
-                        style: GoogleFonts.nunito(color: Colors.white),
+                      Container(
+                        padding: EdgeInsets.all(10),
+                        decoration: BoxDecoration(
+                            color: Color.fromARGB(255, 0, 0, 50),
+                            borderRadius: BorderRadius.only(
+                              topLeft: Radius.circular(5),
+                              bottomLeft: Radius.circular(5),
+                            )),
+                        child: Text(
+                          "PHP",
+                          style: GoogleFonts.nunito(color: Colors.white),
+                        ),
                       ),
-                    ),
-                    Container(
-                      padding: EdgeInsets.all(10),
-                      decoration: BoxDecoration(
-                          color: Colors.blue,
-                          borderRadius: BorderRadius.only(
-                            topRight: Radius.circular(5),
-                            bottomRight: Radius.circular(5),
-                          )),
-                      child: Text(
-                        "SS Scripting",
-                        style: GoogleFonts.nunito(color: Colors.white),
+                      Container(
+                        padding: EdgeInsets.all(10),
+                        decoration: BoxDecoration(
+                            color: Colors.blue,
+                            borderRadius: BorderRadius.only(
+                              topRight: Radius.circular(5),
+                              bottomRight: Radius.circular(5),
+                            )),
+                        child: Text(
+                          "SS Scripting",
+                          style: GoogleFonts.nunito(color: Colors.white),
+                        ),
                       ),
-                    ),
                     ],
                   ),
                   SizedBox(height: 25),
@@ -104,7 +104,8 @@ class ProjectCard2 extends StatelessWidget {
                     ),
                     child: Text(
                       "A business portfolio for Ellie Writes' service. For all your professional writing services, copywriting, career and interview counselling.",
-                      style: GoogleFonts.nunito(color: Colors.blue, fontSize: 16),
+                      style:
+                          GoogleFonts.nunito(color: Colors.blue, fontSize: 16),
                       textAlign: TextAlign.justify,
                     ),
                   ),
