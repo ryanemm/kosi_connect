@@ -33,7 +33,7 @@ class RecentWorkDesktop extends StatelessWidget {
                 child: AnimatedTextKit(
                   totalRepeatCount: 10,
                   animatedTexts: [
-                    TypewriterAnimatedText("<RECENT PROJECTS>",
+                    TypewriterAnimatedText("<recent work>",
                         speed: Duration(milliseconds: 100),
                         textStyle: GoogleFonts.novaRound(
                             fontSize: 26,

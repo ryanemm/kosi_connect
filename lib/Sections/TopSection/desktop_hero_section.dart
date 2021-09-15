@@ -18,7 +18,7 @@ class DesktopHeroSection extends StatelessWidget {
             height: 80,
             direction: ArcDirection.Outside),
         child: Container(
-            padding: EdgeInsets.only(top: 40, left: 40, right: 60, bottom: 90),
+            padding: EdgeInsets.only(top: 10, left: 40, right: 60, bottom: 50),
             alignment: Alignment.center,
             width: screenSize.width,
             height: screenSize.height,
@@ -33,13 +33,15 @@ class DesktopHeroSection extends StatelessWidget {
             child: Column(
                 mainAxisAlignment: MainAxisAlignment.spaceBetween,
                 children: [
-                  Row(children: [
+                  Row(
+                  //mainAxisAlignment: MainAxisAlignment.start,
+                  children: [
                     Expanded(
                       flex: 1,
-                      child: Container(),
+                      child: Image.asset("assets/images/company_logo_hero.png", height: 100),
                     ),
                     Expanded(
-                      flex: 5,
+                      flex: 3,
                       child: Row(
                         mainAxisAlignment: MainAxisAlignment.end,
                         children: [
@@ -122,6 +124,7 @@ class DesktopHeroSection extends StatelessWidget {
                       ],
                     ),
                   ),
+                  SizedBox(height: 70),
                   OutlineGradientButton(
                     child: Text(
                       "OUR PROJECTS",

@@ -1,5 +1,6 @@
 import 'package:flutter/cupertino.dart';
 import "package:flutter/material.dart";
+import 'package:google_fonts/google_fonts.dart';
 import "package:shape_of_view/shape_of_view.dart";
 import 'package:kosi_connect/Components/flat_button.dart';
 import 'package:kosi_connect/Sections/TopSection/about_info.dart';
@@ -7,51 +8,73 @@ import 'package:kosi_connect/Sections/TopSection/about_info.dart';
 class MobileHeroSection extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
+    Size _screenSize = MediaQuery.of(context).size;
     return Container(
+      padding: EdgeInsets.only(bottom: 20),
         color: Colors.white,
         child: ShapeOfView(
-          elevation: 0,
-          shape: DiagonalShape(
-              position: DiagonalPosition.Bottom,
-              direction: DiagonalDirection.Right,
-              angle: DiagonalAngle.deg(angle: 6)),
+          elevation: 6,
+          height: _screenSize.height * 0.6,
+          shape: ArcShape(
+            position: ArcPosition.Bottom,
+            height: 40,
+            direction: ArcDirection.Outside,
+          ),
           child: Container(
-            color: Color.fromARGB(255, 34, 34, 36),
-            padding: EdgeInsets.only(left: 25, right: 25, top: 10, bottom: 40),
+            padding: EdgeInsets.only(top: 20, left: 20, right: 20, bottom: 120),
+            alignment: Alignment.center,
+            width: double.infinity,
+            //height: screenSize.height,
+            decoration: BoxDecoration(
+              gradient: LinearGradient(
+                begin: Alignment.topCenter,
+                end: Alignment.bottomCenter,
+                colors: [Color(0xFFFFBF00), Colors.grey.shade800],
+                stops: [0.05, 0.999],
+              ),
+            ),
             child: Column(
-              mainAxisAlignment: MainAxisAlignment.start,
-              crossAxisAlignment: CrossAxisAlignment.start,
+              crossAxisAlignment: CrossAxisAlignment.center,
+              mainAxisAlignment: MainAxisAlignment.spaceBetween,
               children: [
                 Row(
-                  mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                  mainAxisAlignment: MainAxisAlignment.end,
                   children: [
-                    Image.asset(
-                      "assets/images/logos/my_logo_white.png",
-                      height: 40,
-                    ),
-                    Icon(
-                      Icons.menu_rounded,
-                      color: Colors.white,
-                    )
-                  ],
+                  Icon(Icons.menu_rounded, color: Color(0xFF003049))],
                 ),
-                SizedBox(height: 30),
-                AboutInfoMobile(),
-                SizedBox(height: 20),
-                Row(
-                  mainAxisAlignment: MainAxisAlignment.spaceAround,
-                  children: [
-                    SimpleButton(
-                      text: "My Projects",
-                      ftSize: 13.0,
-                    ),
-                    SimpleButton(text: "Blog Posts", ftSize: 13.0)
-                  ],
+                Container(
+                  child: Column(
+                    mainAxisAlignment: MainAxisAlignment.center,
+                    children: [
+                      Text("CUSTOM", style: GoogleFonts.nunito(fontSize: 14, fontWeight: FontWeight.w300, color: Colors.white)),
+                      SizedBox(height: 10),
+                      Text("SOFTWARE", style: GoogleFonts.novaRound(
+                          fontSize: 36,
+                          color: Color(0xFF003049),
+                          fontWeight: FontWeight.w500),),
+                      SizedBox(height: 0),
+                      Text("DEVELOPMENT", style: GoogleFonts.novaRound(
+                          fontSize: 36,
+                          color: Colors.white,
+                          fontWeight: FontWeight.w500)),
+                      SizedBox(height: 10),
+                      Text("SOLUTIONS FOR ALL YOUR", style: GoogleFonts.nunito(
+                          fontSize: 14,
+                          fontWeight: FontWeight.w300,
+                          color: Colors.white)),
+                      SizedBox(height: 5),
+                      Text("BUSINESS NEEDS",  style: GoogleFonts.nunito(
+                          fontSize: 14,
+                          fontWeight: FontWeight.w300,
+                          color: Colors.white)),
+                    ],)
                 ),
-                SizedBox(height: 30),
+
+
               ],
             ),
           ),
-        ));
+        )
+      );
   }
 }
