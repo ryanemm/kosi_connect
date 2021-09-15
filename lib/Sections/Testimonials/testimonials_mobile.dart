@@ -16,7 +16,7 @@ class TestimonialsMobile extends StatelessWidget {
             shape: DiagonalShape(
                 position: DiagonalPosition.Top,
                 direction: DiagonalDirection.Left,
-                angle: DiagonalAngle.deg(angle: 6)),
+                angle: DiagonalAngle.deg(angle: 0)),
             child: Container(
               color: Colors.white,
               padding:
@@ -25,7 +25,7 @@ class TestimonialsMobile extends StatelessWidget {
                 mainAxisAlignment: MainAxisAlignment.start,
                 crossAxisAlignment: CrossAxisAlignment.start,
                 children: [
-                  AnimatedTextKit(
+                  Center(child: AnimatedTextKit(
                     totalRepeatCount: 10,
                     animatedTexts: [
                       TypewriterAnimatedText("<client testimonials>",
@@ -35,7 +35,7 @@ class TestimonialsMobile extends StatelessWidget {
                               fontWeight: FontWeight.w600,
                               color: Colors.grey[800]))
                     ],
-                  ),
+                  ),),
                   SizedBox(height: 30),
                   Center(
                     child: TestimonialMobile(),
