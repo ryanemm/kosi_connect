@@ -14,22 +14,25 @@ class _RecentWorkMobileState extends State<RecentWorkMobile> {
   @override
   Widget build(BuildContext context) {
     return Container(
+      padding: EdgeInsets.only(bottom: 20),
         color: Colors.white,
         child: ShapeOfView(
-            elevation: 0,
-            shape: DiagonalShape(
-                position: DiagonalPosition.Top,
-                direction: DiagonalDirection.Left,
-                angle: DiagonalAngle.deg(angle: 6)),
+            elevation: 6,
+            shape: ArcShape(
+                position: ArcPosition.Bottom,
+                direction: ArcDirection.Outside,
+                height: 40,),
+
             child: Container(
-              color: Colors.grey[100],
+              color: Colors.grey[200],
               padding:
                   EdgeInsets.only(left: 30, right: 30, top: 40, bottom: 40),
               child: Column(
                 mainAxisAlignment: MainAxisAlignment.start,
                 crossAxisAlignment: CrossAxisAlignment.start,
                 children: [
-                  AnimatedTextKit(
+                  Center( child:
+                    AnimatedTextKit(
                     totalRepeatCount: 10,
                     animatedTexts: [
                       TypewriterAnimatedText("<recent work>",
@@ -39,7 +42,7 @@ class _RecentWorkMobileState extends State<RecentWorkMobile> {
                               fontWeight: FontWeight.w600,
                               color: Color.fromARGB(255, 0, 0, 50)))
                     ],
-                  ),
+                  ),),
                   SizedBox(height: 30),
                   ProjectCardWebsite(),
                   Container(
