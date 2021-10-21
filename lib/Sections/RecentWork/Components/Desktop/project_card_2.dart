@@ -27,7 +27,7 @@ class ProjectCard2 extends StatelessWidget {
                 //mainAxisAlignment: MainAxisAlignment.spaceBetween,
                 children: [
                   Text(
-                    "Student Management System",
+                    "Ellie Whyppe Writes",
                     style: GoogleFonts.novaRound(
                       fontSize: 24,
                       fontWeight: FontWeight.w600,

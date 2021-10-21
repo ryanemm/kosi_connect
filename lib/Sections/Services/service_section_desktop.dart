@@ -18,7 +18,7 @@ class ServiceSectionDesktop extends StatelessWidget {
             height: 80,
             direction: ArcDirection.Outside),
         child: Container(
-          padding: EdgeInsets.only(top: 25, bottom: 90, left: 20, right: 20),
+          padding: EdgeInsets.only(top: 25, bottom: 140, left: 20, right: 20),
           width: _screenSize.width,
           decoration: BoxDecoration(
             color: Colors.grey[200],

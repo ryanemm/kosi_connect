@@ -38,7 +38,7 @@ class _RecentWorkMobileState extends State<RecentWorkMobile> {
                       TypewriterAnimatedText("<recent work>",
                           speed: Duration(milliseconds: 100),
                           textStyle: GoogleFonts.nunito(
-                              fontSize: 18,
+                              fontSize: 26,
                               fontWeight: FontWeight.w600,
                               color: Color.fromARGB(255, 0, 0, 50)))
                     ],

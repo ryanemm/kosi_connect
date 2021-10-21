@@ -18,7 +18,7 @@ class OurProcess extends StatelessWidget {
             height: 80,
             direction: ArcDirection.Outside),
         child: Container(
-          padding: EdgeInsets.only(left: 130, right: 100, top: 30, bottom: 40),
+          padding: EdgeInsets.only(left: 130, right: 100, top: 30, bottom: 80),
           color: Colors.white,
           child: Column(
             children: [
@@ -47,7 +47,7 @@ class OurProcess extends StatelessWidget {
                           color: Color(0xFF003049)),
                     ),
                     Text(
-                        "We will analyse your\n needs to find the best fit solution.\n Once complete our developers will then\n plan the project course and duration\n then present you with\n the outcome.",
+                        "We will analyse your\n needs to find the best fit solution.\n Once complete our developers will \n plan the project course and duration\n then present you with\n the outcome.",
                         style: GoogleFonts.nunito(
                             fontSize: 18, fontWeight: FontWeight.w500),
                         textAlign: TextAlign.center),

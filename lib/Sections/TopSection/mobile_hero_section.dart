@@ -3,7 +3,7 @@ import "package:flutter/material.dart";
 import 'package:google_fonts/google_fonts.dart';
 import "package:shape_of_view/shape_of_view.dart";
 import 'package:kosi_connect/Components/flat_button.dart';
-import 'package:kosi_connect/Sections/TopSection/about_info.dart';
+
 
 class MobileHeroSection extends StatelessWidget {
   @override
@@ -40,7 +40,7 @@ class MobileHeroSection extends StatelessWidget {
                 Row(
                   mainAxisAlignment: MainAxisAlignment.end,
                   children: [
-                  Icon(Icons.menu_rounded, color: Color(0xFF003049))],
+                  Icon(Icons.menu_rounded, color: Color(0xFF003049), size: 20)],
                 ),
                 Container(
                   child: Column(
@@ -51,12 +51,12 @@ class MobileHeroSection extends StatelessWidget {
                       Text("SOFTWARE", style: GoogleFonts.novaRound(
                           fontSize: 36,
                           color: Color(0xFF003049),
-                          fontWeight: FontWeight.w500),),
+                          fontWeight: FontWeight.w600),),
                       SizedBox(height: 0),
                       Text("DEVELOPMENT", style: GoogleFonts.novaRound(
                           fontSize: 36,
                           color: Colors.white,
-                          fontWeight: FontWeight.w500)),
+                          fontWeight: FontWeight.w600)),
                       SizedBox(height: 10),
                       Text("SOLUTIONS FOR ALL YOUR", style: GoogleFonts.nunito(
                           fontSize: 14,

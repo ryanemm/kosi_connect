@@ -31,7 +31,7 @@ class TestimonialsMobile extends StatelessWidget {
                       TypewriterAnimatedText("<client testimonials>",
                           speed: Duration(milliseconds: 100),
                           textStyle: GoogleFonts.nunito(
-                              fontSize: 16,
+                              fontSize: 26,
                               fontWeight: FontWeight.w600,
                               color: Colors.grey[800]))
                     ],

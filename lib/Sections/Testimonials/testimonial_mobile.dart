@@ -20,7 +20,7 @@ class TestimonialMobile extends StatelessWidget {
             textAlign: TextAlign.center,
             softWrap: true,
             style: GoogleFonts.nunito(
-              fontSize: 14,
+              fontSize: 18,
               color: Colors.grey[800],
               fontWeight: FontWeight.w300,
             ),

@@ -25,7 +25,7 @@ List<Service> services = [
     title: "Mobile Development",
     image: "assets/images/mobile_dev_fill_1.png",
     info:
-        "Bringing your app idea to life. Have you thought of the next \n big thing? Or you want to simplify and automate \n a business process?",
+        "Bringing your app idea to life. Have you thought of the next \n big thing? Or you want to simplify and automate",
   ),
   Service(
       id: 2,

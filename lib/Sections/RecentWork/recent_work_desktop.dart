@@ -1,7 +1,7 @@
 import 'package:animated_text_kit/animated_text_kit.dart';
 import "package:flutter/material.dart";
 import 'package:google_fonts/google_fonts.dart';
-import 'package:kosi_connect/Sections/RecentWork/Components/Desktop/project_card.dart';
+import 'package:kosi_connect/Sections/RecentWork/Components/Desktop/project_card_mac.dart';
 import 'package:kosi_connect/Sections/RecentWork/Components/Desktop/project_card_2.dart';
 import 'package:kosi_connect/Sections/RecentWork/Components/Desktop/project_card_mobile.dart';
 import "package:shape_of_view/shape_of_view.dart";
@@ -21,7 +21,7 @@ class RecentWorkDesktop extends StatelessWidget {
             direction: ArcDirection.Outside,
             height: 80),
         child: Container(
-          padding: EdgeInsets.only(bottom: 90, left: 130, right: 100, top: 30),
+          padding: EdgeInsets.only(bottom: 140, left: 130, right: 100, top: 30),
           width: _screenSize.width,
           decoration: BoxDecoration(
             color: Colors.grey[200],
@@ -42,10 +42,12 @@ class RecentWorkDesktop extends StatelessWidget {
                   ],
                 ),
               ),
-              SizedBox(height: 50),
-              ProjectCard2(),
-              SizedBox(height: 50),
+              SizedBox(height: 100),
+              ProjectCardMac(),
+              SizedBox(height: 100),
               ProjectCardMobile(),
+              SizedBox(height: 100),
+              ProjectCard2(),
             ],
           ),
         ),

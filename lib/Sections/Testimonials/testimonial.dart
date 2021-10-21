@@ -15,7 +15,7 @@ class Testimonial extends StatelessWidget {
           AccentBar(),
           SizedBox(height: 20),
           Text(
-            "\"Ryan is an excellent \n web designer and sharp developer. \nHe is extremely pleasant to work with and involves you \nin the development process. Always willing\n to go the extra mile to meet your\n exact requirements\"",
+            "\"The team are excellent \n web designers and sharp developers. \nThey were extremely pleasant to work with and involved me \nin the development process. Always willing\n to go the extra mile to meet your\n exact requirements\"",
             textAlign: TextAlign.center,
             softWrap: true,
             style: GoogleFonts.nunito(
