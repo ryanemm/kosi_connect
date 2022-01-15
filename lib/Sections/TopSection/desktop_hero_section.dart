@@ -30,107 +30,49 @@ class DesktopHeroSection extends StatelessWidget {
                 stops: [0.05, 0.999],
               ),
             ),
-            child: Column(
-                mainAxisAlignment: MainAxisAlignment.spaceBetween,
+            child: Container(
+              child: Column(
+                mainAxisAlignment: MainAxisAlignment.center,
+                crossAxisAlignment: CrossAxisAlignment.center,
                 children: [
-                  Row(
-                      //mainAxisAlignment: MainAxisAlignment.start,
+                  Text("CUSTOM",
+                      style: GoogleFonts.nunito(
+                          fontSize: 22, color: Colors.white)),
+                  RichText(
+                    text: TextSpan(
+                      style: GoogleFonts.novaRound(
+                          fontSize: 70,
+                          color: Color(0xFF003049),
+                          fontWeight: FontWeight.w500),
                       children: [
-                        Expanded(
-                          flex: 1,
-                          child: Image.asset(
-                              "assets/images/company_logo_hero.png",
-                              height: 100),
-                        ),
-                        Expanded(
-                          flex: 3,
-                          child: Row(
-                            mainAxisAlignment: MainAxisAlignment.end,
-                            children: [
-                              Text(
-                                "Services",
-                                style: GoogleFonts.nunito(
-                                    color: Color(0xFF003049),
-                                    fontSize: 18,
-                                    fontWeight: FontWeight.w600),
-                              ),
-                              SizedBox(width: 50),
-                              OutlineGradientButton(
-                                child: Text(
-                                  "Contact",
-                                  style: GoogleFonts.nunito(
-                                      color: Color(0xFF003049),
-                                      fontSize: 18,
-                                      fontWeight: FontWeight.w600),
-                                ),
-                                gradient: LinearGradient(colors: [
-                                  Color(0xFF003049),
-                                  Color(0xFF003049)
-                                ]),
-                                strokeWidth: 3,
-                                padding: EdgeInsets.all(10),
-                                inkWell: true,
-                                onTap: () {},
-                                radius: Radius.circular(10),
-                              ),
-                            ],
-                          ),
-                        ),
-                      ]),
-                  Container(
-                    child: Row(
-                      mainAxisAlignment: MainAxisAlignment.center,
-                      children: [
-                        Column(
-                          mainAxisAlignment: MainAxisAlignment.center,
-                          crossAxisAlignment: CrossAxisAlignment.center,
-                          children: [
-                            Text("CUSTOM",
-                                style: GoogleFonts.nunito(
-                                    fontSize: 22, color: Colors.white)),
-                            RichText(
-                              text: TextSpan(
-                                style: GoogleFonts.novaRound(
-                                    fontSize: 70,
-                                    color: Color(0xFF003049),
-                                    fontWeight: FontWeight.w500),
-                                children: [
-                                  TextSpan(text: "SOFTWARE "),
-                                  TextSpan(
-                                      text: "DEVELOPMENT",
-                                      style: GoogleFonts.novaRound(
-                                          fontSize: 70,
-                                          color: Colors.white,
-                                          fontWeight: FontWeight.w500))
-                                ],
-                              ),
-                            ),
-                            SizedBox(
-                              height: 0,
-                            ),
-                            RichText(
-                              text: TextSpan(
-                                  style: GoogleFonts.nunito(
-                                      fontSize: 22,
-                                      color: Colors.white,
-                                      fontWeight: FontWeight.w300),
-                                  children: [
-                                    TextSpan(text: "SOLUTIONS FOR"),
-                                    TextSpan(
-                                        text: " ALL",
-                                        style: GoogleFonts.nunito(
-                                            fontSize: 30,
-                                            color: Colors.white,
-                                            fontWeight: FontWeight.w300)),
-                                    TextSpan(text: " YOUR BUSINESS NEEDS")
-                                  ]),
-                            )
-                          ],
-                        ),
+                        TextSpan(text: "SOFTWARE "),
+                        TextSpan(
+                            text: "DEVELOPMENT",
+                            style: GoogleFonts.novaRound(
+                                fontSize: 70,
+                                color: Colors.white,
+                                fontWeight: FontWeight.w500))
                       ],
                     ),
                   ),
-                  SizedBox(height: 70),
+                  RichText(
+                    text: TextSpan(
+                        style: GoogleFonts.nunito(
+                            fontSize: 22,
+                            color: Colors.white,
+                            fontWeight: FontWeight.w300),
+                        children: [
+                          TextSpan(text: "SOLUTIONS FOR"),
+                          TextSpan(
+                              text: " ALL",
+                              style: GoogleFonts.nunito(
+                                  fontSize: 30,
+                                  color: Colors.white,
+                                  fontWeight: FontWeight.w300)),
+                          TextSpan(text: " YOUR BUSINESS NEEDS")
+                        ]),
+                  ),
+                  SizedBox(height: 40),
                   OutlineGradientButton(
                     child: Text(
                       "OUR PROJECTS",
@@ -145,12 +87,9 @@ class DesktopHeroSection extends StatelessWidget {
                     onTap: () {},
                     radius: Radius.circular(10),
                   ),
-                  /*Icon(
-                    Icons.arrow_downward_rounded,
-                    color: Colors.white,
-                    size: 50,
-                  )*/
-                ])),
+                ],
+              ),
+            )),
       ),
     );
   }
