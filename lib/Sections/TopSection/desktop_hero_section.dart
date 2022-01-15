@@ -34,43 +34,49 @@ class DesktopHeroSection extends StatelessWidget {
                 mainAxisAlignment: MainAxisAlignment.spaceBetween,
                 children: [
                   Row(
-                  //mainAxisAlignment: MainAxisAlignment.start,
-                  children: [
-                    Expanded(
-                      flex: 1,
-                      child: Image.asset("assets/images/company_logo_hero.png", height: 100),
-                    ),
-                    Expanded(
-                      flex: 3,
-                      child: Row(
-                        mainAxisAlignment: MainAxisAlignment.end,
-                        children: [
-                          Text(
-                            "Services",
-                            style: GoogleFonts.nunito(
-                                color: Color(0xFF003049), fontSize: 18, fontWeight: FontWeight.w600),
+                      //mainAxisAlignment: MainAxisAlignment.start,
+                      children: [
+                        Expanded(
+                          flex: 1,
+                          child: Image.asset(
+                              "assets/images/company_logo_hero.png",
+                              height: 100),
+                        ),
+                        Expanded(
+                          flex: 3,
+                          child: Row(
+                            mainAxisAlignment: MainAxisAlignment.end,
+                            children: [
+                              Text(
+                                "Services",
+                                style: GoogleFonts.nunito(
+                                    color: Color(0xFF003049),
+                                    fontSize: 18,
+                                    fontWeight: FontWeight.w600),
+                              ),
+                              SizedBox(width: 50),
+                              OutlineGradientButton(
+                                child: Text(
+                                  "Contact",
+                                  style: GoogleFonts.nunito(
+                                      color: Color(0xFF003049),
+                                      fontSize: 18,
+                                      fontWeight: FontWeight.w600),
+                                ),
+                                gradient: LinearGradient(colors: [
+                                  Color(0xFF003049),
+                                  Color(0xFF003049)
+                                ]),
+                                strokeWidth: 3,
+                                padding: EdgeInsets.all(10),
+                                inkWell: true,
+                                onTap: () {},
+                                radius: Radius.circular(10),
+                              ),
+                            ],
                           ),
-                          SizedBox(width: 50),
-                          OutlineGradientButton(
-                            child: Text(
-                              "Contact",
-                              style: GoogleFonts.nunito(
-                                  color: Color(0xFF003049), fontSize: 18, fontWeight: FontWeight.w600),
-                            ),
-                            gradient: LinearGradient(colors: [
-                              Color(0xFF003049),
-                              Color(0xFF003049)
-                            ]),
-                            strokeWidth: 3,
-                            padding: EdgeInsets.all(10),
-                            inkWell: true,
-                            onTap: () {},
-                            radius: Radius.circular(10),
-                          ),
-                        ],
-                      ),
-                    ),
-                  ]),
+                        ),
+                      ]),
                   Container(
                     child: Row(
                       mainAxisAlignment: MainAxisAlignment.center,
