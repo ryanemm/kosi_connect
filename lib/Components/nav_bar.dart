@@ -111,14 +111,14 @@ class _MobileBarState extends State<MobileBar> {
       child: BackdropFilter(
         filter: ImageFilter.blur(sigmaX: 5, sigmaY: 5),
         child: Container(
-          padding: EdgeInsets.only(top: 10, left: 20, right: 20),
+          padding: EdgeInsets.only(top: 0, left: 20, right: 20),
           child:
               Row(mainAxisAlignment: MainAxisAlignment.spaceBetween, children: [
             // SizedBox(width: 20),
             InkWell(
               child: Text(
-                "</r>",
-                style: GoogleFonts.nunito(color: Colors.black, fontSize: 48),
+                "kc",
+                style: GoogleFonts.nunito(color: Colors.black, fontSize: 30),
               ),
             ),
             Icon(

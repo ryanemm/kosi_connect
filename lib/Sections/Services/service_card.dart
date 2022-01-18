@@ -1,5 +1,6 @@
 import "package:flutter/material.dart";
 import 'package:google_fonts/google_fonts.dart';
+import 'package:kosi_connect/Components/shimmer_button.dart';
 import "package:outline_gradient_button/outline_gradient_button.dart";
 import "package:kosi_connect/models/services.dart";
 
@@ -23,7 +24,6 @@ class _ServiceCardState extends State<ServiceCard> {
     return Container(
       height: 340,
       width: 350,
-    
       child: Stack(children: [
         Positioned(
           left: 0,
@@ -56,23 +56,9 @@ class _ServiceCardState extends State<ServiceCard> {
                       GoogleFonts.nunito(fontSize: 20, color: Colors.grey[800]),
                 ),
                 SizedBox(height: 15),
-                Container(
-                    padding:
-                        EdgeInsets.only(bottom: 6, top: 6, left: 50, right: 50),
-                    decoration: BoxDecoration(
-                      color: Color(0xFFFFBF00),
-                      borderRadius: BorderRadius.circular(25),
-                    ),
-                    child: TextButton(
-                      onPressed: () {},
-                      child: Text(
-                        "ENQUIRE",
-                        style: GoogleFonts.nunito(
-                            fontWeight: FontWeight.w600,
-                            color: Color(0xFF003049),
-                            fontSize: 16),
-                      ),
-                    )),
+                ShimmerButton(
+                  buttonText: "Enquire",
+                )
               ],
             ),
           ),
