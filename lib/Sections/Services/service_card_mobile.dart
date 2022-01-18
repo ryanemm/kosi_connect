@@ -68,10 +68,9 @@ class _ServiceCardMobileState extends State<ServiceCardMobile> {
                             blurRadius: 5,
                             spreadRadius: 2)
                       ],
-                      gradient:
-                          LinearGradient(colors: [Colors.purple, Colors.blue]),
+                      gradient: LinearGradient(
+                          colors: [Color(0xFF003049), Color(0xFFFFBF00)]),
                       //color: Color(0xFFFFBF00),
-                      borderRadius: BorderRadius.circular(25),
                     ),
                     child: TextButton(
                       onPressed: () {
