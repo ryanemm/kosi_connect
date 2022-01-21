@@ -10,38 +10,26 @@ class TestimonialsMobile extends StatelessWidget {
   Widget build(BuildContext context) {
     Size _screenSize = MediaQuery.of(context).size;
     return Container(
-        color: Colors.grey[100],
-        child: ShapeOfView(
-            elevation: 0,
-            shape: DiagonalShape(
-                position: DiagonalPosition.Top,
-                direction: DiagonalDirection.Left,
-                angle: DiagonalAngle.deg(angle: 0)),
-            child: Container(
-              color: Colors.white,
-              padding:
-                  EdgeInsets.only(left: 30, top: 40, bottom: 20, right: 30),
-              child: Column(
-                mainAxisAlignment: MainAxisAlignment.start,
-                crossAxisAlignment: CrossAxisAlignment.start,
-                children: [
-                  Center(child: AnimatedTextKit(
-                    totalRepeatCount: 10,
-                    animatedTexts: [
-                      TypewriterAnimatedText("<client testimonials>",
-                          speed: Duration(milliseconds: 100),
-                          textStyle: GoogleFonts.nunito(
-                              fontSize: 26,
-                              fontWeight: FontWeight.w600,
-                              color: Colors.grey[800]))
-                    ],
-                  ),),
-                  SizedBox(height: 30),
-                  Center(
-                    child: TestimonialMobile(),
-                  ),
-                ],
-              ),
-            )));
+      color: Colors.white,
+      padding: EdgeInsets.only(left: 30, top: 40, bottom: 20, right: 30),
+      child: Column(
+        mainAxisAlignment: MainAxisAlignment.start,
+        crossAxisAlignment: CrossAxisAlignment.start,
+        children: [
+          Center(
+              child: Text(
+            "Client Testimonials",
+            style: GoogleFonts.novaRound(
+              fontSize: 32,
+              color: Color(0xFF003049),
+            ),
+          )),
+          SizedBox(height: 30),
+          Center(
+            child: TestimonialMobile(),
+          ),
+        ],
+      ),
+    );
   }
 }

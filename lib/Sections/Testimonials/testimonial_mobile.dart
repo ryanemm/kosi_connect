@@ -9,7 +9,7 @@ class TestimonialMobile extends StatelessWidget {
     Size _screenSize = MediaQuery.of(context).size;
     return Container(
       width: _screenSize.width,
-      decoration: BoxDecoration(color: Colors.white),
+      color: Colors.white,
       child: Column(
         mainAxisAlignment: MainAxisAlignment.center,
         children: [

@@ -7,8 +7,7 @@ class AccentBarMobile extends StatelessWidget {
       height: 4,
       width: 50,
       decoration: BoxDecoration(
-        gradient: LinearGradient(colors: [Color(0xFFFFBF00) , Colors.orange]),
-        borderRadius: BorderRadius.circular(3.5),
+        gradient: LinearGradient(colors: [Color(0xFFFFBF00), Colors.orange]),
       ),
     );
   }
