@@ -10,7 +10,7 @@ class Footer extends StatelessWidget {
 
     if (_isLandscape) {
       child = Container(
-      padding: EdgeInsets.only(left: 130, right: 130),
+        padding: EdgeInsets.only(left: 130, right: 130),
         height: 150,
         width: double.infinity,
         //margin: EdgeInsets.symmetric(vertical: 30, horizontal: 10),
@@ -19,13 +19,12 @@ class Footer extends StatelessWidget {
           mainAxisAlignment: MainAxisAlignment.spaceBetween,
           children: [
             Text(
-              "© 2021 Kosi Connect. All rights reserved.",
+              "© 2022 KOSI CONNECT. ALL RIGHTS RESERVED.",
               style: GoogleFonts.novaRound(
                   fontWeight: FontWeight.w300,
                   color: Colors.grey[300],
                   fontSize: 16),
             ),
-            
             Image.asset("assets/images/company_logo.png", height: 100),
             RichText(
               text: TextSpan(
@@ -57,7 +56,7 @@ class Footer extends StatelessWidget {
           mainAxisAlignment: MainAxisAlignment.center,
           children: [
             Text(
-              "COPYRIGHT © 2021 RYAN EMASON - ALL RIGHTS RESERVED",
+              "© 2022 KOSI CONNECT - ALL RIGHTS RESERVED",
               textAlign: TextAlign.center,
               style: GoogleFonts.nunito(
                   fontWeight: FontWeight.w300,

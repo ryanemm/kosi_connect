@@ -47,11 +47,11 @@ class _ServiceCardMobileState extends State<ServiceCardMobile> {
           Text(
             services[widget.index].info,
             textAlign: TextAlign.center,
-            style: GoogleFonts.nunito(fontSize: 16, color: Colors.grey[800]),
+            style: GoogleFonts.nunito(fontSize: 18, color: Colors.grey[800]),
           ),
           SizedBox(height: 18),
           Container(
-              padding: EdgeInsets.only(bottom: 3, top: 3, left: 40, right: 40),
+              padding: EdgeInsets.only(bottom: 0, top: 0, left: 20, right: 20),
               decoration: BoxDecoration(
                 boxShadow: [
                   BoxShadow(
