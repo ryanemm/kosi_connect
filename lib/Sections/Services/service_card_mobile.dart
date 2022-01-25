@@ -23,10 +23,13 @@ class _ServiceCardMobileState extends State<ServiceCardMobile> {
   Widget build(BuildContext context) {
     Size _screenSize = MediaQuery.of(context).size;
     return Container(
-      //padding: EdgeInsets.all(15),
-      margin: EdgeInsets.symmetric(vertical: 10),
-      height: 300,
-      width: 300,
+      padding: EdgeInsets.only(top: 15, bottom: 30, left: 15, right: 15),
+      margin: EdgeInsets.symmetric(vertical: 20, horizontal: 20),
+      // height: 400,
+      // width: 300,
+      decoration: BoxDecoration(color: Colors.white, boxShadow: [
+        BoxShadow(color: Colors.grey, offset: Offset(2, 2), blurRadius: 5)
+      ]),
       child: Column(
         mainAxisAlignment: MainAxisAlignment.center,
         children: [
@@ -39,7 +42,7 @@ class _ServiceCardMobileState extends State<ServiceCardMobile> {
             services[widget.index].title,
             textAlign: TextAlign.center,
             style: GoogleFonts.novaRound(
-                fontSize: 26,
+                fontSize: 22,
                 fontWeight: FontWeight.w500,
                 color: Color(0xFF003049)),
           ),
@@ -47,21 +50,24 @@ class _ServiceCardMobileState extends State<ServiceCardMobile> {
           Text(
             services[widget.index].info,
             textAlign: TextAlign.center,
-            style: GoogleFonts.nunito(fontSize: 18, color: Colors.grey[800]),
+            style: GoogleFonts.nunito(
+                fontSize: 18,
+                color: Colors.grey[800],
+                fontWeight: FontWeight.w300),
           ),
           SizedBox(height: 18),
           Container(
-              padding: EdgeInsets.only(bottom: 0, top: 0, left: 20, right: 20),
+              padding: EdgeInsets.symmetric(horizontal: 20),
               decoration: BoxDecoration(
                 boxShadow: [
                   BoxShadow(
-                      offset: Offset(4, 7),
-                      color: Colors.grey.shade400,
+                      offset: Offset(2, 2),
+                      color: Colors.grey.shade600,
                       blurRadius: 5,
-                      spreadRadius: 2)
+                      spreadRadius: 0)
                 ],
-                gradient: LinearGradient(
-                    colors: [Color(0xFF003049), Color(0xFFFFBF00)]),
+                gradient:
+                    LinearGradient(colors: [Color(0xFFFFBF00), Colors.orange]),
                 //color: Color(0xFFFFBF00),
               ),
               child: TextButton(
@@ -75,7 +81,7 @@ class _ServiceCardMobileState extends State<ServiceCardMobile> {
                   "ENQUIRE",
                   style: GoogleFonts.nunito(
                       //fontWeight: FontWeight.w600,
-                      color: Colors.white,
+                      color: Color(0xFF003049),
                       fontSize: 14),
                 ),
               )),

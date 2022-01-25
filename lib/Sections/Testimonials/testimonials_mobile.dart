@@ -19,8 +19,9 @@ class TestimonialsMobile extends StatelessWidget {
           Center(
               child: Text(
             "Client Testimonials",
+            textAlign: TextAlign.center,
             style: GoogleFonts.novaRound(
-              fontSize: 32,
+              fontSize: 26,
               color: Color(0xFF003049),
             ),
           )),

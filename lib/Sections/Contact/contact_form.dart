@@ -13,38 +13,10 @@ class _ContactFormState extends State<ContactForm> {
   @override
   Widget build(BuildContext context) {
     return Container(
-      width: double.infinity,
+      padding: EdgeInsets.all(40),
+      // width: double.infinity,
       child: Column(
         children: [
-          /*Row(
-          mainAxisSize: MainAxisSize.min,
-            children: [
-              ListTile(
-                title: const Text("Mobile App"),
-                leading: Radio<Choice>(
-                  value: Choice.mobileapp,
-                  groupValue: _choice,
-                  onChanged: (Choice? value) {
-                    setState(() {
-                      _choice = value;
-                    });
-                  },
-                ),
-              ),
-              ListTile(
-                title: const Text("Website"),
-                leading: Radio<Choice>(
-                  value: Choice.website,
-                  groupValue: _choice,
-                  onChanged: (Choice? value) {
-                    setState(() {
-                      _choice = value;
-                    });
-                  },
-                ),
-              )
-            ],
-          ),*/
           TextFormField(
             keyboardType: TextInputType.text,
             maxLines: 5,
@@ -53,32 +25,23 @@ class _ContactFormState extends State<ContactForm> {
                     "Any additional details about the product you want will be helpful",
                 border: InputBorder.none),
           ),
-          Row(
-            mainAxisAlignment: MainAxisAlignment.spaceBetween,
-            children: [
-              TextField(
-                decoration: InputDecoration(
-                    hintText: "First name", border: InputBorder.none),
-              ),
-              TextField(
-                decoration: InputDecoration(
-                    hintText: "Last name", border: InputBorder.none),
-              ),
-            ],
+          TextField(
+            decoration: InputDecoration(
+                hintText: "First name", border: InputBorder.none),
           ),
-          Row(
-            children: [
-              TextField(
-                decoration: InputDecoration(
-                  hintText: "e-mail address",
-                ),
-              ),
-              TextField(
-                decoration: InputDecoration(
-                  hintText: "Cell number",
-                ),
-              ),
-            ],
+          TextField(
+            decoration: InputDecoration(
+                hintText: "Last name", border: InputBorder.none),
+          ),
+          TextField(
+            decoration: InputDecoration(
+              hintText: "e-mail address",
+            ),
+          ),
+          TextField(
+            decoration: InputDecoration(
+              hintText: "Cell number",
+            ),
           ),
           Container(
             padding: EdgeInsets.only(top: 10, bottom: 10, left: 25, right: 25),

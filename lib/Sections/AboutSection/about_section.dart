@@ -15,7 +15,7 @@ class AboutSection extends StatelessWidget {
           Text(
             "About Us",
             style: GoogleFonts.novaRound(
-              fontSize: 32,
+              fontSize: 26,
               color: Color(0xFF003049),
             ),
           ),
@@ -28,8 +28,9 @@ class AboutSection extends StatelessWidget {
           Text(
             "A web and mobile developer from Johannesburg, South Africa. I create bespoke websites and mobile apps to help bring your business to life.",
             style: GoogleFonts.nunito(
-              fontSize: 18,
-            ),
+                fontSize: 18,
+                color: Colors.grey[800],
+                fontWeight: FontWeight.w300),
             textAlign: TextAlign.center,
           ),
           SizedBox(height: 50),
@@ -45,6 +46,8 @@ class AboutSection extends StatelessWidget {
             "A web and mobile developer from Johannesburg, South Africa. I create bespoke websites and mobile apps to help bring your business to life.",
             style: GoogleFonts.nunito(
               fontSize: 18,
+              color: Colors.grey[800],
+              fontWeight: FontWeight.w300,
             ),
             textAlign: TextAlign.center,
           )

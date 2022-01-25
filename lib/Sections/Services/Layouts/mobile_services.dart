@@ -8,8 +8,8 @@ class MobileServices extends StatelessWidget {
   Widget build(BuildContext context) {
     Size _screenSize = MediaQuery.of(context).size;
     return Container(
-      color: Colors.white,
-      padding: EdgeInsets.only(left: 10, right: 10, top: 10, bottom: 30),
+      color: Colors.grey[200],
+      padding: EdgeInsets.only(left: 10, right: 10, top: 20, bottom: 30),
       child: Column(
         mainAxisAlignment: MainAxisAlignment.start,
         crossAxisAlignment: CrossAxisAlignment.center,
@@ -17,7 +17,7 @@ class MobileServices extends StatelessWidget {
           Text(
             "Our Services",
             style: GoogleFonts.novaRound(
-              fontSize: 32,
+              fontSize: 26,
               color: Color(0xFF003049),
             ),
           ),

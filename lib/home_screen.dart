@@ -37,10 +37,10 @@ class SmallScreen extends StatelessWidget {
       TopSection(),
       AboutSection(),
       ServiceSection(),
-      // OurProcess(),
-      // RecentWork(),
+      OurProcess(),
+      RecentWork(),
       Testimonials(),
-      //ContactSection(),
+      ContactSection(),
       Footer(),
     ];
 
@@ -52,7 +52,7 @@ class SmallScreen extends StatelessWidget {
           isAlwaysShown: true,
           showTrackOnHover: true,
           child: ListView.builder(
-            itemCount: 5,
+            itemCount: 8,
             itemBuilder: (BuildContext context, int index) {
               return sectionsDesktop.elementAt(index);
             },

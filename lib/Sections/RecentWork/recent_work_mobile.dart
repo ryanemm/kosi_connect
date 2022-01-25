@@ -14,45 +14,23 @@ class _RecentWorkMobileState extends State<RecentWorkMobile> {
   @override
   Widget build(BuildContext context) {
     return Container(
-      padding: EdgeInsets.only(bottom: 20),
-        color: Colors.white,
-        child: ShapeOfView(
-            elevation: 6,
-            shape: ArcShape(
-                position: ArcPosition.Bottom,
-                direction: ArcDirection.Outside,
-                height: 40,),
-
-            child: Container(
-              color: Colors.grey[200],
-              padding:
-                  EdgeInsets.only(left: 30, right: 30, top: 40, bottom: 40),
-              child: Column(
-                mainAxisAlignment: MainAxisAlignment.start,
-                crossAxisAlignment: CrossAxisAlignment.start,
-                children: [
-                  Center( child:
-                    AnimatedTextKit(
-                    totalRepeatCount: 10,
-                    animatedTexts: [
-                      TypewriterAnimatedText("<recent work>",
-                          speed: Duration(milliseconds: 100),
-                          textStyle: GoogleFonts.nunito(
-                              fontSize: 26,
-                              fontWeight: FontWeight.w600,
-                              color: Color.fromARGB(255, 0, 0, 50)))
-                    ],
-                  ),),
-                  SizedBox(height: 30),
-                  ProjectCardWebsite(),
-                  Container(
-                      width: double.infinity,
-                      height: 2,
-                      margin: EdgeInsets.only(top: 30, bottom: 30),
-                      decoration: BoxDecoration(color: Colors.grey[400])),
-                  ProjectCardMobile()
-                ],
-              ),
-            )));
+      color: Colors.grey[200],
+      padding: EdgeInsets.only(left: 30, right: 30, top: 40, bottom: 40),
+      child: Column(
+        mainAxisAlignment: MainAxisAlignment.start,
+        crossAxisAlignment: CrossAxisAlignment.start,
+        children: [
+          Center(
+            child: Text(
+              "Recent Projects",
+              style:
+                  GoogleFonts.novaRound(fontSize: 26, color: Color(0xFF003049)),
+            ),
+          ),
+          SizedBox(height: 30),
+          ProjectCardWebsite(),
+        ],
+      ),
+    );
   }
 }
