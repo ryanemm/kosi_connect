@@ -1,3 +1,4 @@
+import 'package:animated_text_kit/animated_text_kit.dart';
 import 'package:flutter/cupertino.dart';
 import "package:flutter/material.dart";
 import 'package:google_fonts/google_fonts.dart';
@@ -7,27 +8,20 @@ class MobileHeroSection extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     Size _screenSize = MediaQuery.of(context).size;
-    return Container(
-      padding: EdgeInsets.only(top: 20, left: 20, right: 20, bottom: 0),
-      alignment: Alignment.center,
-      width: double.infinity,
-      height: _screenSize.height * 0.75,
-      decoration: BoxDecoration(
-        gradient: LinearGradient(
-          begin: Alignment.topCenter,
-          end: Alignment.bottomCenter,
-          colors: [Color(0xFFFFBF00), Colors.grey.shade800],
-          stops: [0.05, 0.999],
-        ),
-      ),
-      child: Column(
+    return Stack(alignment: AlignmentDirectional.topCenter, children: [
+      Container(
+          // height: _screenSize.height * 0.75,
+          width: _screenSize.width,
+          child: Image.asset("assets/images/header.jpg")),
+      Column(
         crossAxisAlignment: CrossAxisAlignment.center,
         mainAxisAlignment: MainAxisAlignment.center,
         children: [
-          Container(
-              child: Column(
+          Column(
             mainAxisAlignment: MainAxisAlignment.center,
+            crossAxisAlignment: CrossAxisAlignment.center,
             children: [
+              SizedBox(height: 100),
               Text("CUSTOM",
                   style: GoogleFonts.nunito(
                       fontSize: 14,
@@ -48,25 +42,46 @@ class MobileHeroSection extends StatelessWidget {
                       color: Colors.white,
                       fontWeight: FontWeight.w600)),
               SizedBox(height: 10),
-              Text("SOLUTIONS FOR ALL YOUR",
+              Text("SOLUTIONS TO",
                   style: GoogleFonts.nunito(
                       fontSize: 14,
                       fontWeight: FontWeight.w300,
                       color: Colors.white)),
               SizedBox(height: 5),
-              Text("BUSINESS NEEDS",
-                  style: GoogleFonts.nunito(
-                      fontSize: 14,
-                      fontWeight: FontWeight.w300,
-                      color: Colors.white)),
+              AnimatedTextKit(
+                repeatForever: true,
+                animatedTexts: [
+                  TypewriterAnimatedText("FUTURE PROOF YOUR BUSINESS",
+                      cursor: "|",
+                      speed: Duration(milliseconds: 150),
+                      textStyle: GoogleFonts.nunito(
+                          fontSize: 14,
+                          fontWeight: FontWeight.w300,
+                          color: Colors.white)),
+                  TypewriterAnimatedText("SIMPLIFY YOUR WORKFLOW",
+                      cursor: "|",
+                      speed: Duration(milliseconds: 150),
+                      textStyle: GoogleFonts.nunito(
+                          fontSize: 14,
+                          fontWeight: FontWeight.w300,
+                          color: Colors.white)),
+                  TypewriterAnimatedText("REACH NEW CLIENTELE",
+                      cursor: "|",
+                      speed: Duration(milliseconds: 150),
+                      textStyle: GoogleFonts.nunito(
+                          fontSize: 14,
+                          fontWeight: FontWeight.w300,
+                          color: Colors.white))
+                ],
+              ),
               SizedBox(
                 height: 40,
               ),
               SquareButton()
             ],
-          )),
+          ),
         ],
       ),
-    );
+    ]);
   }
 }

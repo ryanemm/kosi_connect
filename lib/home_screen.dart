@@ -48,15 +48,11 @@ class SmallScreen extends StatelessWidget {
       backgroundColor: Colors.grey[200],
       body: Container(
           child: Stack(children: [
-        Scrollbar(
-          isAlwaysShown: true,
-          showTrackOnHover: true,
-          child: ListView.builder(
-            itemCount: 8,
-            itemBuilder: (BuildContext context, int index) {
-              return sectionsDesktop.elementAt(index);
-            },
-          ),
+        ListView.builder(
+          itemCount: 8,
+          itemBuilder: (BuildContext context, int index) {
+            return sectionsDesktop.elementAt(index);
+          },
         ),
         NavBar()
       ])),

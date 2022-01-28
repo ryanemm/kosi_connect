@@ -46,6 +46,13 @@ class _SquareButtonState extends State<SquareButton> {
                         blurRadius: 5,
                         spreadRadius: 2)
               ],*/
+              /*boxShadow: [
+                BoxShadow(
+                    offset: Offset(2, 2),
+                    color: Colors.grey.shade600,
+                    blurRadius: 5,
+                    spreadRadius: 0)
+              ],*/
             ),
             child: TextButton(
               onPressed: () {},

@@ -3,6 +3,7 @@ import 'package:google_fonts/google_fonts.dart';
 import 'package:kosi_connect/Sections/Contact/contact_page_mobile.dart';
 import "package:outline_gradient_button/outline_gradient_button.dart";
 import "package:kosi_connect/models/services.dart";
+import 'package:kosi_connect/Components/accent_bar_mobile.dart';
 
 class ServiceCardMobile extends StatefulWidget {
   const ServiceCardMobile({
@@ -23,13 +24,11 @@ class _ServiceCardMobileState extends State<ServiceCardMobile> {
   Widget build(BuildContext context) {
     Size _screenSize = MediaQuery.of(context).size;
     return Container(
-      padding: EdgeInsets.only(top: 15, bottom: 30, left: 15, right: 15),
-      margin: EdgeInsets.symmetric(vertical: 20, horizontal: 20),
+      padding: EdgeInsets.only(top: 5, bottom: 10, left: 0, right: 0),
+      margin: EdgeInsets.symmetric(vertical: 20),
       // height: 400,
       // width: 300,
-      decoration: BoxDecoration(color: Colors.white, boxShadow: [
-        BoxShadow(color: Colors.grey, offset: Offset(2, 2), blurRadius: 5)
-      ]),
+
       child: Column(
         mainAxisAlignment: MainAxisAlignment.center,
         children: [
@@ -37,6 +36,8 @@ class _ServiceCardMobileState extends State<ServiceCardMobile> {
             services[widget.index].image,
             height: 60,
           ),
+          SizedBox(height: 6),
+          AccentBarMobile(),
           SizedBox(height: 4),
           Text(
             services[widget.index].title,
@@ -59,13 +60,13 @@ class _ServiceCardMobileState extends State<ServiceCardMobile> {
           Container(
               padding: EdgeInsets.symmetric(horizontal: 20),
               decoration: BoxDecoration(
-                boxShadow: [
+                /*boxShadow: [
                   BoxShadow(
                       offset: Offset(2, 2),
                       color: Colors.grey.shade600,
                       blurRadius: 5,
                       spreadRadius: 0)
-                ],
+                ],*/
                 gradient:
                     LinearGradient(colors: [Color(0xFFFFBF00), Colors.orange]),
                 //color: Color(0xFFFFBF00),

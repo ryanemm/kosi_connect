@@ -7,31 +7,48 @@ class MobileServices extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     Size _screenSize = MediaQuery.of(context).size;
-    return Container(
-      color: Colors.grey[200],
-      padding: EdgeInsets.only(left: 10, right: 10, top: 20, bottom: 30),
-      child: Column(
-        mainAxisAlignment: MainAxisAlignment.start,
-        crossAxisAlignment: CrossAxisAlignment.center,
-        children: [
-          Text(
-            "Our Services",
-            style: GoogleFonts.novaRound(
-              fontSize: 26,
-              color: Color(0xFF003049),
-            ),
+    return Column(
+      children: [
+        Container(
+          // height: 350,
+          child: Stack(
+            alignment: AlignmentDirectional.center,
+            children: [
+              Image.asset("assets/images/mpumalanga_mobile.jpg"),
+              Center(
+                  child: Text(
+                "How can we help you?",
+                style: GoogleFonts.novaRound(
+                    fontSize: 22,
+                    fontWeight: FontWeight.w500,
+                    color: Colors.white),
+              ))
+            ],
           ),
-          Container(
-            height: 3,
-            width: 150,
-            color: Colors.amberAccent,
+        ),
+        Container(
+          color: Colors.grey[50],
+          padding: EdgeInsets.only(left: 30, right: 30, top: 20, bottom: 30),
+          child: Column(
+            mainAxisAlignment: MainAxisAlignment.start,
+            crossAxisAlignment: CrossAxisAlignment.center,
+            children: [
+              Text(
+                "Our Services",
+                style: GoogleFonts.novaRound(
+                  fontSize: 26,
+                  fontWeight: FontWeight.w600,
+                  color: Color(0xFF003049),
+                ),
+              ),
+              SizedBox(height: 0),
+              ServiceCardMobile(index: 0),
+              ServiceCardMobile(index: 1),
+              ServiceCardMobile(index: 2),
+            ],
           ),
-          SizedBox(height: 10),
-          ServiceCardMobile(index: 0),
-          ServiceCardMobile(index: 1),
-          ServiceCardMobile(index: 2),
-        ],
-      ),
+        ),
+      ],
     );
   }
 }

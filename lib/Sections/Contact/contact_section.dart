@@ -16,21 +16,16 @@ class ContactSection extends StatelessWidget {
           Container(
               height: 250,
               width: _screenSize.width,
-              decoration: BoxDecoration(
-                  image: DecorationImage(
-                      image: AssetImage(
-                        "assets/images/nelspruit.jpg",
-                      ),
-                      fit: BoxFit.cover)),
               child: Stack(
                 alignment: AlignmentDirectional.topCenter,
                 children: [
+                  Image.asset("assets/images/nelspruit_mobile.jpg"),
                   Column(
                     mainAxisAlignment: MainAxisAlignment.center,
                     children: [
                       Text(
                         "Address",
-                        style: GoogleFonts.nunito(
+                        style: GoogleFonts.novaRound(
                             fontSize: 22,
                             fontWeight: FontWeight.w500,
                             color: Colors.white),
@@ -40,7 +35,7 @@ class ContactSection extends StatelessWidget {
                         "372 Long Homes, Umjindi,",
                         style: GoogleFonts.nunito(
                             fontSize: 18,
-                            fontWeight: FontWeight.w400,
+                            fontWeight: FontWeight.w500,
                             color: Colors.white),
                       ),
                       SizedBox(height: 15),
@@ -48,7 +43,7 @@ class ContactSection extends StatelessWidget {
                         "Barberton, 1300",
                         style: GoogleFonts.nunito(
                             fontSize: 18,
-                            fontWeight: FontWeight.w400,
+                            fontWeight: FontWeight.w500,
                             color: Colors.white),
                       ),
                       SizedBox(height: 15),
@@ -56,7 +51,7 @@ class ContactSection extends StatelessWidget {
                         "Mpumalanga",
                         style: GoogleFonts.nunito(
                             fontSize: 18,
-                            fontWeight: FontWeight.w400,
+                            fontWeight: FontWeight.w500,
                             color: Colors.white),
                       ),
                       SizedBox(height: 15),
@@ -64,7 +59,7 @@ class ContactSection extends StatelessWidget {
                         "Tel: 073 016 9018",
                         style: GoogleFonts.nunito(
                             fontSize: 18,
-                            fontWeight: FontWeight.w400,
+                            fontWeight: FontWeight.w500,
                             color: Colors.white),
                       ),
                     ],

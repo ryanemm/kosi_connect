@@ -44,7 +44,7 @@ class _DesktopBarState extends State<DesktopBar> {
             Expanded(
                 flex: 1,
                 child: InkWell(
-                  child: Image.asset("assets/images/company_logo_hero.png",
+                  child: Image.asset("assets/images/company_logo_navbar.png",
                       height: 100),
                 )),
             Expanded(

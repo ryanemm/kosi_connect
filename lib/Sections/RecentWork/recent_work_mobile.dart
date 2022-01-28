@@ -14,18 +14,18 @@ class _RecentWorkMobileState extends State<RecentWorkMobile> {
   @override
   Widget build(BuildContext context) {
     return Container(
-      color: Colors.grey[200],
-      padding: EdgeInsets.only(left: 30, right: 30, top: 40, bottom: 40),
+      color: Colors.white,
+      padding: EdgeInsets.only(left: 20, right: 20, top: 40, bottom: 40),
       child: Column(
         mainAxisAlignment: MainAxisAlignment.start,
-        crossAxisAlignment: CrossAxisAlignment.start,
+        crossAxisAlignment: CrossAxisAlignment.center,
         children: [
-          Center(
-            child: Text(
-              "Recent Projects",
-              style:
-                  GoogleFonts.novaRound(fontSize: 26, color: Color(0xFF003049)),
-            ),
+          Text(
+            "Recent Projects",
+            style: GoogleFonts.novaRound(
+                fontSize: 26,
+                color: Color(0xFF003049),
+                fontWeight: FontWeight.w600),
           ),
           SizedBox(height: 30),
           ProjectCardWebsite(),
