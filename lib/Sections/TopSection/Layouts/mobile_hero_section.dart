@@ -24,8 +24,8 @@ class MobileHeroSection extends StatelessWidget {
               SizedBox(height: 100),
               Text("CUSTOM",
                   style: GoogleFonts.nunito(
-                      fontSize: 14,
-                      fontWeight: FontWeight.w300,
+                      fontSize: 18,
+                      fontWeight: FontWeight.w400,
                       color: Colors.white)),
               SizedBox(height: 10),
               Text(
@@ -44,8 +44,8 @@ class MobileHeroSection extends StatelessWidget {
               SizedBox(height: 10),
               Text("SOLUTIONS TO",
                   style: GoogleFonts.nunito(
-                      fontSize: 14,
-                      fontWeight: FontWeight.w300,
+                      fontSize: 18,
+                      fontWeight: FontWeight.w400,
                       color: Colors.white)),
               SizedBox(height: 5),
               AnimatedTextKit(
@@ -53,24 +53,24 @@ class MobileHeroSection extends StatelessWidget {
                 animatedTexts: [
                   TypewriterAnimatedText("FUTURE PROOF YOUR BUSINESS",
                       cursor: "|",
-                      speed: Duration(milliseconds: 150),
+                      speed: Duration(milliseconds: 100),
                       textStyle: GoogleFonts.nunito(
-                          fontSize: 14,
-                          fontWeight: FontWeight.w300,
+                          fontSize: 18,
+                          fontWeight: FontWeight.w400,
                           color: Colors.white)),
                   TypewriterAnimatedText("SIMPLIFY YOUR WORKFLOW",
                       cursor: "|",
-                      speed: Duration(milliseconds: 150),
+                      speed: Duration(milliseconds: 100),
                       textStyle: GoogleFonts.nunito(
-                          fontSize: 14,
-                          fontWeight: FontWeight.w300,
+                          fontSize: 18,
+                          fontWeight: FontWeight.w400,
                           color: Colors.white)),
                   TypewriterAnimatedText("REACH NEW CLIENTELE",
                       cursor: "|",
-                      speed: Duration(milliseconds: 150),
+                      speed: Duration(milliseconds: 100),
                       textStyle: GoogleFonts.nunito(
-                          fontSize: 14,
-                          fontWeight: FontWeight.w300,
+                          fontSize: 18,
+                          fontWeight: FontWeight.w400,
                           color: Colors.white))
                 ],
               ),

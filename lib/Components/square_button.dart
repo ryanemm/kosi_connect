@@ -28,7 +28,7 @@ class _SquareButtonState extends State<SquareButton> {
         },
         child: AnimatedContainer(
             duration: Duration(milliseconds: 500),
-            padding: EdgeInsets.only(bottom: 6, top: 6, left: 50, right: 50),
+            padding: EdgeInsets.symmetric(horizontal: 20),
             decoration: BoxDecoration(
               gradient: _isHover
                   ? LinearGradient(colors: [Colors.white, Colors.white])
@@ -59,7 +59,7 @@ class _SquareButtonState extends State<SquareButton> {
               child: Text(
                 "ABOUT US",
                 style: GoogleFonts.nunito(
-                    fontWeight: FontWeight.w400,
+                    fontWeight: FontWeight.w500,
                     color: Color(0xFF003049),
                     fontSize: 18),
               ),

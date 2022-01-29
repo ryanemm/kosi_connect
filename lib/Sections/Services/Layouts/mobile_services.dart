@@ -14,20 +14,51 @@ class MobileServices extends StatelessWidget {
           child: Stack(
             alignment: AlignmentDirectional.center,
             children: [
-              Image.asset("assets/images/mpumalanga_mobile.jpg"),
+              Image.asset("assets/images/nelspruit1_mobile_blur.jpeg"),
               Center(
-                  child: Text(
-                "How can we help you?",
-                style: GoogleFonts.novaRound(
-                    fontSize: 22,
-                    fontWeight: FontWeight.w500,
-                    color: Colors.white),
+                  child: Column(
+                children: [
+                  Text(
+                    "HOW CAN WE HELP YOU?",
+                    style: GoogleFonts.novaRound(
+                        fontSize: 26,
+                        fontWeight: FontWeight.w500,
+                        color: Colors.white),
+                  ),
+                  SizedBox(height: 10),
+                  AnimatedTextKit(
+                    repeatForever: true,
+                    animatedTexts: [
+                      TypewriterAnimatedText("A WEB SITE?",
+                          cursor: "|",
+                          speed: Duration(milliseconds: 100),
+                          textStyle: GoogleFonts.nunito(
+                              fontSize: 18,
+                              fontWeight: FontWeight.w400,
+                              color: Colors.white)),
+                      TypewriterAnimatedText("A MOBILE APP?",
+                          cursor: "|",
+                          speed: Duration(milliseconds: 100),
+                          textStyle: GoogleFonts.nunito(
+                              fontSize: 18,
+                              fontWeight: FontWeight.w400,
+                              color: Colors.white)),
+                      TypewriterAnimatedText("A CUSTOM SOLUTION?",
+                          cursor: "|",
+                          speed: Duration(milliseconds: 100),
+                          textStyle: GoogleFonts.nunito(
+                              fontSize: 18,
+                              fontWeight: FontWeight.w400,
+                              color: Colors.white))
+                    ],
+                  ),
+                ],
               ))
             ],
           ),
         ),
         Container(
-          color: Colors.grey[50],
+          color: Colors.white,
           padding: EdgeInsets.only(left: 30, right: 30, top: 20, bottom: 30),
           child: Column(
             mainAxisAlignment: MainAxisAlignment.start,

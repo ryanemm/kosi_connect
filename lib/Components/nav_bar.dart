@@ -111,7 +111,7 @@ class _MobileBarState extends State<MobileBar> {
       child: BackdropFilter(
         filter: ImageFilter.blur(sigmaX: 5, sigmaY: 5),
         child: Container(
-          padding: EdgeInsets.only(top: 0, left: 20, right: 20),
+          padding: EdgeInsets.only(top: 10, bottom: 10, left: 20, right: 20),
           child:
               Row(mainAxisAlignment: MainAxisAlignment.spaceBetween, children: [
             // SizedBox(width: 20),
