@@ -38,7 +38,7 @@ class ProjectCardWebsite extends StatelessWidget {
                 style: GoogleFonts.nunito(
                   color: Colors.grey[800],
                   fontSize: 18,
-                  fontWeight: FontWeight.w300,
+                  fontWeight: FontWeight.w400,
                 ),
                 textAlign: TextAlign.center,
               ),

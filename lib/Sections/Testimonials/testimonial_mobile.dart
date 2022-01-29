@@ -22,7 +22,7 @@ class TestimonialMobile extends StatelessWidget {
             style: GoogleFonts.nunito(
               fontSize: 18,
               color: Colors.grey[800],
-              fontWeight: FontWeight.w300,
+              fontWeight: FontWeight.w400,
             ),
           ),
           SizedBox(height: 10),
