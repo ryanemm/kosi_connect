@@ -14,20 +14,18 @@ class SimpleButton extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(
-      width: 100,
-      padding: EdgeInsets.all(1),
+      // width: 100,
+      padding: EdgeInsets.symmetric(horizontal: 40, vertical: 10),
       decoration: BoxDecoration(
-        color: Colors.blue,
-        borderRadius: BorderRadius.circular(10),
+        color: Colors.white,
       ),
       child: (TextButton(
-        child: Text(
-          text,
-          style: GoogleFonts.nunito(
+        child: Text(text,
+            style: GoogleFonts.nunito(
               fontSize: ftSize,
-              fontWeight: FontWeight.w400,
-              color: Colors.white),
-        ),
+              fontWeight: FontWeight.w600,
+              color: Color(0xFF003049),
+            )),
         onPressed: () {},
       )),
     );

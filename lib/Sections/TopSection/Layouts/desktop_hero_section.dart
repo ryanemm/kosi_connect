@@ -1,5 +1,7 @@
+import 'package:animated_text_kit/animated_text_kit.dart';
 import "package:flutter/material.dart";
 import 'package:google_fonts/google_fonts.dart';
+import 'package:kosi_connect/Components/flat_button.dart';
 import 'package:outline_gradient_button/outline_gradient_button.dart';
 import 'package:shape_of_view/shape_of_view.dart';
 
@@ -24,7 +26,7 @@ class DesktopHeroSection extends StatelessWidget {
             height: screenSize.height,
             decoration: BoxDecoration(
                 image: DecorationImage(
-                    image: AssetImage("assets/images/header_desktop1.jpg"),
+                    image: AssetImage("assets/images/header_desktop1.jpeg"),
                     fit: BoxFit.cover)),
             child: Container(
               child: Column(
@@ -33,56 +35,65 @@ class DesktopHeroSection extends StatelessWidget {
                 children: [
                   Text("CUSTOM",
                       style: GoogleFonts.nunito(
-                          fontSize: 22, color: Colors.white)),
+                          fontSize: 32, color: Colors.white)),
                   RichText(
                     text: TextSpan(
                       style: GoogleFonts.novaRound(
                           fontSize: 70,
-                          color: Color(0xFF003049),
-                          fontWeight: FontWeight.w500),
+                          color: Colors.white,
+                          fontWeight: FontWeight.w600),
                       children: [
                         TextSpan(text: "SOFTWARE "),
                         TextSpan(
                             text: "DEVELOPMENT",
                             style: GoogleFonts.novaRound(
                                 fontSize: 70,
-                                color: Colors.white,
-                                fontWeight: FontWeight.w500))
+                                color: Color(0xFF003049),
+                                fontWeight: FontWeight.w600))
                       ],
                     ),
                   ),
+                  // SizedBox(height: 40),
                   RichText(
                     text: TextSpan(
                         style: GoogleFonts.nunito(
-                            fontSize: 22,
+                            fontSize: 32,
                             color: Colors.white,
-                            fontWeight: FontWeight.w300),
+                            fontWeight: FontWeight.w400),
                         children: [
-                          TextSpan(text: "SOLUTIONS FOR"),
-                          TextSpan(
-                              text: " ALL",
-                              style: GoogleFonts.nunito(
-                                  fontSize: 30,
-                                  color: Colors.white,
-                                  fontWeight: FontWeight.w300)),
-                          TextSpan(text: " YOUR BUSINESS NEEDS")
+                          TextSpan(text: "SOLUTIONS TO"),
                         ]),
                   ),
-                  SizedBox(height: 40),
-                  OutlineGradientButton(
-                    child: Text(
-                      "OUR PROJECTS",
-                      style:
-                          GoogleFonts.nunito(color: Colors.white, fontSize: 18),
-                    ),
-                    gradient:
-                        LinearGradient(colors: [Colors.white, Colors.white]),
-                    strokeWidth: 2,
-                    padding: EdgeInsets.all(18),
-                    inkWell: true,
-                    onTap: () {},
-                    radius: Radius.circular(10),
+                  AnimatedTextKit(
+                    repeatForever: true,
+                    animatedTexts: [
+                      TypewriterAnimatedText("FUTURE PROOF YOUR BUSINESS",
+                          cursor: "|",
+                          speed: Duration(milliseconds: 100),
+                          textStyle: GoogleFonts.nunito(
+                              fontSize: 32,
+                              fontWeight: FontWeight.w400,
+                              color: Colors.white)),
+                      TypewriterAnimatedText("SIMPLIFY YOUR WORKFLOW",
+                          cursor: "|",
+                          speed: Duration(milliseconds: 100),
+                          textStyle: GoogleFonts.nunito(
+                              fontSize: 32,
+                              fontWeight: FontWeight.w400,
+                              color: Colors.white)),
+                      TypewriterAnimatedText("REACH NEW CLIENTELE",
+                          cursor: "|",
+                          speed: Duration(milliseconds: 100),
+                          textStyle: GoogleFonts.nunito(
+                              fontSize: 32,
+                              fontWeight: FontWeight.w400,
+                              color: Colors.white))
+                    ],
                   ),
+                  SizedBox(height: 40),
+                  SimpleButton(
+                    text: "ABOUT US",
+                  )
                 ],
               ),
             )),

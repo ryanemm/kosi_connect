@@ -131,7 +131,7 @@ class LargeScreen extends StatelessWidget {
   Widget build(BuildContext context) {
     List<Widget> sectionsDesktop = [
       TopSection(),
-      //AboutSection(),
+      AboutSection(),
       ServiceSection(),
       OurProcess(),
       RecentWork(),
