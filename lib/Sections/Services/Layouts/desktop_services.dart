@@ -10,7 +10,7 @@ class DesktopServices extends StatelessWidget {
     Size _screenSize = MediaQuery.of(context).size;
     return Container(
       color: Colors.white,
-      padding: const EdgeInsets.only(bottom: 30),
+      padding: const EdgeInsets.only(bottom: 30, top: 30),
       child: ShapeOfView(
         elevation: 6,
         shape: ArcShape(
@@ -25,13 +25,23 @@ class DesktopServices extends StatelessWidget {
           ),
           child: Column(
             children: [
+              Text(
+                "Our Services",
+                textAlign: TextAlign.center,
+                style: GoogleFonts.novaRound(
+                  fontSize: 40,
+                  fontWeight: FontWeight.w600,
+                  color: Color(0xFF003049),
+                ),
+              ),
+              SizedBox(height: 30),
               Center(
                 child: Image.asset(
                   "assets/images/web_dev_graphic.png",
                   height: 200,
                 ),
               ),
-              SizedBox(height: 30),
+              SizedBox(height: 10),
               Row(
                 mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                 children: [

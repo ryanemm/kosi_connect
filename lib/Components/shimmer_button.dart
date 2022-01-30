@@ -31,10 +31,9 @@ class _ShimmerButtonState extends State<ShimmerButton> {
             decoration: BoxDecoration(
               gradient: _isHover
                   ? LinearGradient(
-                      colors: [Color(0xFFFFBF00), Color(0xFF003049)])
+                      colors: [Color(0xFFFFBF00), Colors.yellowAccent])
                   : LinearGradient(
-                      colors: [Color(0xFF003049), Color(0xFFFFBF00)]),
-              borderRadius: BorderRadius.circular(25),
+                      colors: [Colors.yellowAccent, Color(0xFFFFBF00)]),
               boxShadow: [
                 _isHover
                     ? BoxShadow(
@@ -55,7 +54,7 @@ class _ShimmerButtonState extends State<ShimmerButton> {
                 buttonText,
                 style: GoogleFonts.nunito(
                     fontWeight: FontWeight.w400,
-                    color: Colors.white,
+                    color: Color(0xFF003049),
                     fontSize: 18),
               ),
             )),
