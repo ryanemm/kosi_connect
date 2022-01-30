@@ -136,7 +136,7 @@ class LargeScreen extends StatelessWidget {
       OurProcess(),
       RecentWork(),
       Testimonials(),
-      //ContactSection(),
+      ContactSection(),
       Footer(),
     ];
 
@@ -148,7 +148,7 @@ class LargeScreen extends StatelessWidget {
           isAlwaysShown: true,
           showTrackOnHover: true,
           child: ListView.builder(
-            itemCount: 6,
+            itemCount: 8,
             itemBuilder: (BuildContext context, int index) {
               return sectionsDesktop.elementAt(index);
             },

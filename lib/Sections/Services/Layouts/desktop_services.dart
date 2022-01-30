@@ -21,7 +21,7 @@ class DesktopServices extends StatelessWidget {
           padding: EdgeInsets.only(top: 25, bottom: 140, left: 20, right: 20),
           width: _screenSize.width,
           decoration: BoxDecoration(
-            color: Colors.grey[200],
+            color: Colors.grey[100],
           ),
           child: Column(
             children: [

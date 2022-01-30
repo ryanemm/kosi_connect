@@ -21,7 +21,7 @@ class Testimonial extends StatelessWidget {
             style: GoogleFonts.nunito(
               fontSize: 30,
               color: Colors.grey[800],
-              fontWeight: FontWeight.w300,
+              fontWeight: FontWeight.w400,
             ),
           ),
           SizedBox(height: 20),
@@ -30,7 +30,7 @@ class Testimonial extends StatelessWidget {
           Text(
             "- Melissa Whyppe \n Ellie Whyppe Writes",
             style: GoogleFonts.nunito(
-                fontWeight: FontWeight.w400,
+                fontWeight: FontWeight.w600,
                 color: Colors.grey[800],
                 fontSize: 22),
           ),

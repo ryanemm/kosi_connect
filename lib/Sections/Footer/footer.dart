@@ -10,8 +10,8 @@ class Footer extends StatelessWidget {
 
     if (_isLandscape) {
       child = Container(
-        padding: EdgeInsets.only(left: 130, right: 130),
-        height: 150,
+        padding: EdgeInsets.symmetric(horizontal: 300, vertical: 10),
+        // height: 150,
         width: double.infinity,
         //margin: EdgeInsets.symmetric(vertical: 30, horizontal: 10),
         color: Colors.grey[900],
@@ -19,29 +19,19 @@ class Footer extends StatelessWidget {
           mainAxisAlignment: MainAxisAlignment.spaceBetween,
           children: [
             Text(
-              "© 2022 KOSI CONNECT. ALL RIGHTS RESERVED.",
+              "© 2022 KOSI CONNECT.",
               style: GoogleFonts.novaRound(
                   fontWeight: FontWeight.w300,
                   color: Colors.grey[300],
                   fontSize: 16),
             ),
-            Image.asset("assets/images/company_logo.png", height: 100),
-            RichText(
-              text: TextSpan(
-                style: GoogleFonts.novaRound(
-                    fontWeight: FontWeight.w300,
-                    color: Colors.grey[300],
-                    fontSize: 16),
-                children: [
-                  TextSpan(text: "Built with the"),
-                  TextSpan(
-                    text: " Flutter©",
-                    style: TextStyle(
-                        fontWeight: FontWeight.bold, color: Colors.grey[200]),
-                  ),
-                  TextSpan(text: " framework.")
-                ],
-              ),
+            Image.asset("assets/images/company_logo.png", height: 80),
+            Text(
+              "ALL RIGHTS RESERVED",
+              style: GoogleFonts.novaRound(
+                  fontWeight: FontWeight.w300,
+                  color: Colors.grey[300],
+                  fontSize: 16),
             ),
           ],
         ),
