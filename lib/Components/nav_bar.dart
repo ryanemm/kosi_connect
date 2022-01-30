@@ -70,13 +70,11 @@ class _DesktopBarState extends State<DesktopBar> {
                         padding:
                             EdgeInsets.symmetric(vertical: 6, horizontal: 12),
                         decoration: BoxDecoration(
-                            color: isHover
-                                ? Color(0xFF003049)
-                                : Colors.transparent,
-                            border:
-                                Border.all(width: 2, color: Color(0xFF003049)),
-                            borderRadius:
-                                BorderRadius.all(Radius.circular(30))),
+                          color:
+                              isHover ? Color(0xFF003049) : Colors.transparent,
+                          border:
+                              Border.all(width: 2, color: Color(0xFF003049)),
+                        ),
                         child: Text(
                           "Contact",
                           style: GoogleFonts.nunito(
