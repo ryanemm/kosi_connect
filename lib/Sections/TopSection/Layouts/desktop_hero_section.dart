@@ -11,7 +11,7 @@ class DesktopHeroSection extends StatelessWidget {
     Size screenSize = MediaQuery.of(context).size;
     return Container(
       padding: EdgeInsets.only(bottom: 15),
-      color: Colors.grey[200],
+      color: Colors.white,
       child: ShapeOfView(
         elevation: 6,
         height: screenSize.height * 0.9,

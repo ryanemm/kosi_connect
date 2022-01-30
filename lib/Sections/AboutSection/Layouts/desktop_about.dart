@@ -10,8 +10,8 @@ class DesktopAbout extends StatelessWidget {
   Widget build(BuildContext context) {
     Size screenSize = MediaQuery.of(context).size;
     return Container(
-      color: Colors.white,
-      padding: EdgeInsets.symmetric(vertical: 40),
+      color: Colors.grey[100],
+      padding: EdgeInsets.only(bottom: 50),
       child: ShapeOfView(
         elevation: 6,
         shape: ArcShape(
@@ -20,6 +20,7 @@ class DesktopAbout extends StatelessWidget {
             direction: ArcDirection.Outside),
         child: Container(
           padding: const EdgeInsets.symmetric(vertical: 80, horizontal: 300),
+          color: Colors.white,
           child: Column(
             crossAxisAlignment: CrossAxisAlignment.center,
             children: [

@@ -12,7 +12,7 @@ class DesktopProcess extends StatelessWidget {
     return Container(
       padding: EdgeInsets.only(bottom: 30),
       width: double.infinity,
-      color: Colors.grey[200],
+      color: Colors.grey[100],
       child: ShapeOfView(
         elevation: 6,
         shape: ArcShape(

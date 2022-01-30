@@ -10,7 +10,7 @@ class DesktopServices extends StatelessWidget {
     Size _screenSize = MediaQuery.of(context).size;
     return Container(
       color: Colors.white,
-      padding: const EdgeInsets.only(bottom: 30, top: 30),
+      padding: const EdgeInsets.only(bottom: 30),
       child: ShapeOfView(
         elevation: 6,
         shape: ArcShape(
