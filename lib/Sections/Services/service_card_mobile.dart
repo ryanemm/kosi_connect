@@ -1,6 +1,7 @@
 import "package:flutter/material.dart";
 import 'package:google_fonts/google_fonts.dart';
 import 'package:kosi_connect/Sections/Contact/contact_page_mobile.dart';
+import 'package:kosi_connect/home_screen.dart';
 import "package:outline_gradient_button/outline_gradient_button.dart";
 import "package:kosi_connect/models/services.dart";
 import 'package:kosi_connect/Components/accent_bar_mobile.dart';
@@ -57,35 +58,38 @@ class _ServiceCardMobileState extends State<ServiceCardMobile> {
                 fontWeight: FontWeight.w400),
           ),
           SizedBox(height: 18),
-          Container(
-              padding: EdgeInsets.symmetric(horizontal: 20),
-              decoration: BoxDecoration(
-                /*boxShadow: [
-                  BoxShadow(
-                      offset: Offset(2, 2),
-                      color: Colors.grey.shade600,
-                      blurRadius: 5,
-                      spreadRadius: 0)
-                ],*/
-                gradient:
-                    LinearGradient(colors: [Color(0xFFFFBF00), Colors.orange]),
-                //color: Color(0xFFFFBF00),
-              ),
-              child: TextButton(
-                onPressed: () {
-                  Navigator.pushReplacement(
-                      context,
-                      MaterialPageRoute(
-                          builder: (context) => ContactPageMobile()));
-                },
-                child: Text(
-                  "ENQUIRE",
-                  style: GoogleFonts.nunito(
-                      //fontWeight: FontWeight.w600,
-                      color: Color(0xFF003049),
-                      fontSize: 14),
+          GestureDetector(
+            onTap: () {},
+            child: Container(
+                padding: EdgeInsets.symmetric(horizontal: 20),
+                decoration: BoxDecoration(
+                  /*boxShadow: [
+                    BoxShadow(
+                        offset: Offset(2, 2),
+                        color: Colors.grey.shade600,
+                        blurRadius: 5,
+                        spreadRadius: 0)
+                  ],*/
+                  gradient: LinearGradient(
+                      colors: [Color(0xFFFFBF00), Colors.orange]),
+                  //color: Color(0xFFFFBF00),
                 ),
-              )),
+                child: TextButton(
+                  onPressed: () {
+                    Navigator.pushReplacement(
+                        context,
+                        MaterialPageRoute(
+                            builder: (context) => ContactPageMobile()));
+                  },
+                  child: Text(
+                    "ENQUIRE",
+                    style: GoogleFonts.nunito(
+                        //fontWeight: FontWeight.w600,
+                        color: Color(0xFF003049),
+                        fontSize: 14),
+                  ),
+                )),
+          ),
         ],
       ),
     );

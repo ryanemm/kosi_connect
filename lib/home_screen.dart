@@ -24,15 +24,20 @@ class _HomeScreenState extends State<HomeScreen> {
     return ResponsiveLayout(
         largeScreen: LargeScreen(),
         mediumScreen: MediumScreen(),
-        smallScreen: SmallScreen());
+        smallScreen: SmallScreen(
+          controller: ScrollController(),
+        ));
   }
 }
 
 class SmallScreen extends StatelessWidget {
-  const SmallScreen({Key? key}) : super(key: key);
+  const SmallScreen({Key? key, required this.controller}) : super(key: key);
+
+  final ScrollController controller;
 
   @override
   Widget build(BuildContext context) {
+    Size _screenSize = MediaQuery.of(context).size;
     List<Widget> sectionsDesktop = [
       TopSection(),
       AboutSection(),
@@ -45,18 +50,36 @@ class SmallScreen extends StatelessWidget {
     ];
 
     return Scaffold(
+      drawer: Drawer(
+        child: ListView(
+          padding: EdgeInsets.zero,
+          children: [
+            DrawerHeader(
+              decoration: BoxDecoration(color: Colors.blue),
+              child: Text("Drawer Header"),
+            )
+          ],
+        ),
+      ),
       backgroundColor: Colors.grey[200],
       body: Container(
           child: Stack(children: [
         ListView.builder(
+          controller: controller,
           itemCount: 8,
           itemBuilder: (BuildContext context, int index) {
             return sectionsDesktop.elementAt(index);
           },
         ),
-        NavBar()
+        NavBar(),
       ])),
     );
+  }
+
+  void scrollToPosition(double position) {
+    final double section = position;
+
+    controller.jumpTo(section);
   }
 }
 

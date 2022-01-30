@@ -12,7 +12,7 @@ class DesktopHeroSection extends StatelessWidget {
       color: Colors.grey[200],
       child: ShapeOfView(
         elevation: 6,
-        height: screenSize.height * 0.75,
+        height: screenSize.height * 0.9,
         shape: ArcShape(
             position: ArcPosition.Bottom,
             height: 80,
@@ -23,13 +23,9 @@ class DesktopHeroSection extends StatelessWidget {
             width: screenSize.width,
             height: screenSize.height,
             decoration: BoxDecoration(
-              gradient: LinearGradient(
-                begin: Alignment.topCenter,
-                end: Alignment.bottomCenter,
-                colors: [Color(0xFFFFBF00), Colors.grey.shade800],
-                stops: [0.05, 0.999],
-              ),
-            ),
+                image: DecorationImage(
+                    image: AssetImage("assets/images/header_desktop1.jpg"),
+                    fit: BoxFit.cover)),
             child: Container(
               child: Column(
                 mainAxisAlignment: MainAxisAlignment.center,

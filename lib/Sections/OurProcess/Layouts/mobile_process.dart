@@ -38,8 +38,10 @@ class MobileProcess extends StatelessWidget {
           SizedBox(height: 40),
           Center(
             child: Text("Project planning & analysis",
-                style:
-                    GoogleFonts.nunito(fontSize: 12, color: Color(0xFF003049))),
+                style: GoogleFonts.nunito(
+                    fontSize: 12,
+                    color: Color(0xFF003049),
+                    fontWeight: FontWeight.w800)),
           ),
           Center(
             child: Container(
@@ -55,7 +57,9 @@ class MobileProcess extends StatelessWidget {
               Text("Integration &\n training",
                   textAlign: TextAlign.center,
                   style: GoogleFonts.nunito(
-                      fontSize: 12, color: Color(0xFF003049))),
+                      fontSize: 12,
+                      color: Color(0xFF003049),
+                      fontWeight: FontWeight.w800)),
               Container(
                 height: 2,
                 width: 20,
@@ -64,7 +68,7 @@ class MobileProcess extends StatelessWidget {
               Center(
                 child: Image.asset(
                   "assets/images/process_infographic_mobile.jpg",
-                  height: 100,
+                  height: 60,
                 ),
               ),
               Container(
@@ -74,8 +78,10 @@ class MobileProcess extends StatelessWidget {
               ),
               Text(
                 "Development",
-                style:
-                    GoogleFonts.nunito(fontSize: 12, color: Color(0xFF003049)),
+                style: GoogleFonts.nunito(
+                    fontSize: 12,
+                    color: Color(0xFF003049),
+                    fontWeight: FontWeight.w800),
               ),
             ],
           ),
@@ -88,8 +94,10 @@ class MobileProcess extends StatelessWidget {
           ),
           Center(
             child: Text("Testing",
-                style:
-                    GoogleFonts.nunito(fontSize: 12, color: Color(0xFF003049))),
+                style: GoogleFonts.nunito(
+                    fontSize: 12,
+                    color: Color(0xFF003049),
+                    fontWeight: FontWeight.w800)),
           ),
         ],
       ),

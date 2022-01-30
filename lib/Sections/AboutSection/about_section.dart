@@ -26,7 +26,7 @@ class AboutSection extends StatelessWidget {
           AccentBarMobile(),
           SizedBox(height: 15),
           Text(
-            "Kosi Connect is a business centric software development service. We offer a fully fledged IT services that are built around the goal of growing your business",
+            "Kosi Connect is a business centric software development service. We offer fully fledged IT services that are built around the goal of growing your business.",
             style: GoogleFonts.nunito(
                 fontSize: 18,
                 color: Colors.grey[800],
@@ -48,7 +48,7 @@ class AboutSection extends StatelessWidget {
           AccentBarMobile(),
           SizedBox(height: 15),
           Text(
-            "We strive to deliver services and products of highest standard to achieve the ultimate goal of making your business better. Our solutions are built on three principles; efficiency, quality and simplicity",
+            "We strive to deliver services and products of the highest standard to achieve the ultimate goal of making your business better. Our solutions are built on three principles; efficiency, quality and simplicity.",
             style: GoogleFonts.nunito(
               fontSize: 18,
               color: Colors.grey[800],

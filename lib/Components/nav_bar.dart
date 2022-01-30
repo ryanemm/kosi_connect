@@ -118,11 +118,13 @@ class _MobileBarState extends State<MobileBar> {
             InkWell(
               child: Text(
                 "kc",
-                style: GoogleFonts.nunito(color: Colors.black, fontSize: 30),
+                style: GoogleFonts.novaRound(
+                    color: Colors.grey[800], fontSize: 30),
               ),
             ),
             Icon(
               Icons.menu,
+              color: Colors.grey[800],
             )
           ]),
         ),
