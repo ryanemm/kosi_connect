@@ -41,11 +41,8 @@ class ProjectCard2 extends StatelessWidget {
                       Container(
                         padding: EdgeInsets.all(10),
                         decoration: BoxDecoration(
-                            color: Color(0xFF003049),
-                            borderRadius: BorderRadius.only(
-                              topLeft: Radius.circular(5),
-                              bottomLeft: Radius.circular(5),
-                            )),
+                          color: Color(0xFF003049),
+                        ),
                         child: Text(
                           "Flutter",
                           style: GoogleFonts.nunito(color: Colors.white),
@@ -54,11 +51,8 @@ class ProjectCard2 extends StatelessWidget {
                       Container(
                         padding: EdgeInsets.all(10),
                         decoration: BoxDecoration(
-                            color: Colors.blue,
-                            borderRadius: BorderRadius.only(
-                              topRight: Radius.circular(5),
-                              bottomRight: Radius.circular(5),
-                            )),
+                          color: Colors.blue,
+                        ),
                         child: Text(
                           "Dart",
                           style: GoogleFonts.nunito(color: Colors.white),
@@ -68,11 +62,8 @@ class ProjectCard2 extends StatelessWidget {
                       Container(
                         padding: EdgeInsets.all(10),
                         decoration: BoxDecoration(
-                            color: Color.fromARGB(255, 0, 0, 50),
-                            borderRadius: BorderRadius.only(
-                              topLeft: Radius.circular(5),
-                              bottomLeft: Radius.circular(5),
-                            )),
+                          color: Color.fromARGB(255, 0, 0, 50),
+                        ),
                         child: Text(
                           "PHP",
                           style: GoogleFonts.nunito(color: Colors.white),
@@ -81,11 +72,8 @@ class ProjectCard2 extends StatelessWidget {
                       Container(
                         padding: EdgeInsets.all(10),
                         decoration: BoxDecoration(
-                            color: Colors.blue,
-                            borderRadius: BorderRadius.only(
-                              topRight: Radius.circular(5),
-                              bottomRight: Radius.circular(5),
-                            )),
+                          color: Colors.blue,
+                        ),
                         child: Text(
                           "SS Scripting",
                           style: GoogleFonts.nunito(color: Colors.white),
@@ -99,18 +87,17 @@ class ProjectCard2 extends StatelessWidget {
                         top: 20, bottom: 20, left: 20, right: 20),
                     width: 500,
                     decoration: BoxDecoration(
-                      borderRadius: BorderRadius.all(Radius.circular(5)),
                       color: Colors.blue.shade100.withOpacity(0.2),
                     ),
                     child: Text(
                       "A business portfolio for Ellie Writes' service. For all your professional writing services, copywriting, career and interview counselling.",
-                      style:
-                          GoogleFonts.nunito(color: Color(0xFF003049), fontSize: 16),
+                      style: GoogleFonts.nunito(
+                          color: Colors.grey[800], fontSize: 18),
                       textAlign: TextAlign.justify,
                     ),
                   ),
                   SizedBox(height: 25),
-                  Container(
+                  /* Container(
                     padding: EdgeInsets.only(top: 6, bottom: 6, left: 20, right: 20),
                     decoration: BoxDecoration(
                       gradient: LinearGradient(
@@ -136,7 +123,7 @@ class ProjectCard2 extends StatelessWidget {
                       ),
                       onPressed: () {},
                     )),
-                  ),
+                  ),*/
                 ],
               ),
             ),

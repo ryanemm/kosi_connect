@@ -24,28 +24,22 @@ class RecentWorkDesktop extends StatelessWidget {
           padding: EdgeInsets.only(bottom: 140, left: 130, right: 100, top: 30),
           width: _screenSize.width,
           decoration: BoxDecoration(
-            color: Colors.grey[200],
+            color: Colors.grey[100],
           ),
           child: Column(
             mainAxisAlignment: MainAxisAlignment.center,
             children: [
               Center(
-                child: AnimatedTextKit(
-                  totalRepeatCount: 10,
-                  animatedTexts: [
-                    TypewriterAnimatedText("<recent work>",
-                        speed: Duration(milliseconds: 100),
-                        textStyle: GoogleFonts.novaRound(
-                            fontSize: 26,
-                            fontWeight: FontWeight.w600,
-                            color: Color(0xFF003049)))
-                  ],
+                child: Text(
+                  "Recent Work",
+                  textAlign: TextAlign.center,
+                  style: GoogleFonts.novaRound(
+                    fontSize: 40,
+                    fontWeight: FontWeight.w600,
+                    color: Color(0xFF003049),
+                  ),
                 ),
               ),
-              SizedBox(height: 100),
-              ProjectCardMac(),
-              SizedBox(height: 100),
-              ProjectCardMobile(),
               SizedBox(height: 100),
               ProjectCard2(),
             ],
