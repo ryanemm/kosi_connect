@@ -11,7 +11,7 @@ class DesktopContact extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(
-      padding: EdgeInsets.symmetric(horizontal: 200, vertical: 50),
+      padding: EdgeInsets.symmetric(horizontal: 150, vertical: 50),
       color: Colors.grey[100],
       child: Column(
         // crossAxisAlignment: CrossAxisAlignment.center,

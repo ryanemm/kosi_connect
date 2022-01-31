@@ -14,7 +14,7 @@ class _ContactFormState extends State<ContactFormDesktop> {
   Widget build(BuildContext context) {
     return Container(
       color: Colors.grey[100],
-      padding: EdgeInsets.all(40),
+      // padding: EdgeInsets.all(40),
       // width: double.infinity,
       child: Column(
         crossAxisAlignment: CrossAxisAlignment.start,

@@ -11,7 +11,7 @@ class TestimonialsMobile extends StatelessWidget {
     Size _screenSize = MediaQuery.of(context).size;
     return Container(
       color: Colors.white,
-      padding: EdgeInsets.only(left: 30, top: 40, bottom: 20, right: 30),
+      padding: EdgeInsets.only(left: 30, top: 40, bottom: 50, right: 30),
       child: Column(
         mainAxisAlignment: MainAxisAlignment.start,
         crossAxisAlignment: CrossAxisAlignment.center,
@@ -25,7 +25,6 @@ class TestimonialsMobile extends StatelessWidget {
               color: Color(0xFF003049),
             ),
           ),
-          
           SizedBox(height: 30),
           Center(
             child: TestimonialMobile(),

@@ -30,7 +30,7 @@ class _ContactFormState extends State<ContactForm> {
             textAlignVertical: TextAlignVertical.center,
             decoration: InputDecoration(
               prefixIcon: Icon(
-                Icons.person_outline,
+                Icons.person,
                 color: Color(0xFF003049),
               ),
               hintText: "First name",
@@ -43,7 +43,7 @@ class _ContactFormState extends State<ContactForm> {
           TextField(
             textAlignVertical: TextAlignVertical.center,
             decoration: InputDecoration(
-              prefixIcon: Icon(Icons.person_outline, color: Color(0xFF003049)),
+              prefixIcon: Icon(Icons.person, color: Color(0xFF003049)),
               hintText: "Last name",
               border: InputBorder.none,
               filled: true,
@@ -54,7 +54,7 @@ class _ContactFormState extends State<ContactForm> {
           TextField(
             textAlignVertical: TextAlignVertical.center,
             decoration: InputDecoration(
-              prefixIcon: Icon(Icons.email_outlined, color: Color(0xFF003049)),
+              prefixIcon: Icon(Icons.email, color: Color(0xFF003049)),
               hintText: "E-mail address",
               border: InputBorder.none,
               filled: true,
@@ -65,8 +65,7 @@ class _ContactFormState extends State<ContactForm> {
           TextField(
             textAlignVertical: TextAlignVertical.center,
             decoration: InputDecoration(
-              prefixIcon:
-                  Icon(Icons.phone_android_outlined, color: Color(0xFF003049)),
+              prefixIcon: Icon(Icons.phone_android, color: Color(0xFF003049)),
               hintText: "Cell number",
               border: InputBorder.none,
               filled: true,
@@ -86,7 +85,7 @@ class _ContactFormState extends State<ContactForm> {
           ),
           SizedBox(height: 20),
           Container(
-            padding: EdgeInsets.symmetric(horizontal: 20),
+            padding: EdgeInsets.symmetric(horizontal: 20, vertical: 4),
             decoration: BoxDecoration(
               boxShadow: [
                 BoxShadow(
@@ -102,6 +101,7 @@ class _ContactFormState extends State<ContactForm> {
               child: Text(
                 "Submit",
                 style: GoogleFonts.raleway(
+                  fontSize: 18,
                   fontWeight: FontWeight.w300,
                   color: Color(0xFF003049),
                 ),

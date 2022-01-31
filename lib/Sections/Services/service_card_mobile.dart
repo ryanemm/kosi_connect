@@ -82,11 +82,11 @@ class _ServiceCardMobileState extends State<ServiceCardMobile> {
                             builder: (context) => ContactPageMobile()));
                   },
                   child: Text(
-                    "ENQUIRE",
+                    "Enquire",
                     style: GoogleFonts.nunito(
-                        //fontWeight: FontWeight.w600,
+                        fontWeight: FontWeight.w300,
                         color: Color(0xFF003049),
-                        fontSize: 14),
+                        fontSize: 18),
                   ),
                 )),
           ),

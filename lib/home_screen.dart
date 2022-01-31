@@ -50,15 +50,11 @@ class SmallScreen extends StatelessWidget {
     ];
 
     return Scaffold(
+      // appBar: mobileBar(context),
       drawer: Drawer(
         child: ListView(
           padding: EdgeInsets.zero,
-          children: [
-            DrawerHeader(
-              decoration: BoxDecoration(color: Colors.blue),
-              child: Text("Drawer Header"),
-            )
-          ],
+          children: [],
         ),
       ),
       backgroundColor: Colors.grey[200],
@@ -71,7 +67,7 @@ class SmallScreen extends StatelessWidget {
             return sectionsDesktop.elementAt(index);
           },
         ),
-        NavBar(),
+        mobileBar(context)
       ])),
     );
   }
@@ -118,7 +114,6 @@ class MediumScreen extends StatelessWidget {
           left: 30,
           child: SocialBar(),
         ),
-        NavBar()
       ])),
     );
   }
@@ -159,7 +154,6 @@ class LargeScreen extends StatelessWidget {
           left: 30,
           child: SocialBar(),
         ),
-        NavBar()
       ])),
     );
   }
