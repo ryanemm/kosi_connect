@@ -61,7 +61,60 @@ class SmallScreen extends StatelessWidget {
         child: Drawer(
           child: ListView(
             padding: EdgeInsets.zero,
-            children: [],
+            children: [
+              DrawerHeader(
+                  decoration: BoxDecoration(color: Colors.grey[900]),
+                  padding: EdgeInsets.symmetric(vertical: 8, horizontal: 16),
+                  child: Image.asset("assets/images/company_logo.png")),
+              ListTile(
+                title: const Text("About Us"),
+                onTap: () {
+                  Navigator.pop(context);
+                  itemScrollController.scrollTo(
+                      index: 1, duration: Duration(seconds: 2));
+                },
+              ),
+              ListTile(
+                title: const Text("Our Services"),
+                onTap: () {
+                  Navigator.pop(context);
+                  itemScrollController.scrollTo(
+                      index: 2, duration: Duration(seconds: 1));
+                },
+              ),
+              ListTile(
+                title: const Text("Our Process"),
+                onTap: () {
+                  Navigator.pop(context);
+                  itemScrollController.scrollTo(
+                      index: 3, duration: Duration(seconds: 1));
+                },
+              ),
+              ListTile(
+                title: const Text("Recent Work"),
+                onTap: () {
+                  Navigator.pop(context);
+                  itemScrollController.scrollTo(
+                      index: 4, duration: Duration(seconds: 1));
+                },
+              ),
+              ListTile(
+                title: const Text("Testimonials"),
+                onTap: () {
+                  Navigator.pop(context);
+                  itemScrollController.scrollTo(
+                      index: 5, duration: Duration(seconds: 1));
+                },
+              ),
+              ListTile(
+                title: const Text("Contact Us"),
+                onTap: () {
+                  Navigator.pop(context);
+                  itemScrollController.scrollTo(
+                      index: 6, duration: Duration(seconds: 1));
+                },
+              )
+            ],
           ),
         ),
       ),

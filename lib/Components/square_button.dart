@@ -23,6 +23,8 @@ class _SquareButtonState extends State<SquareButton> {
   bool _isHover = false;
   Widget build(BuildContext context) {
     return Container(
+      color: Colors.white,
+      padding: EdgeInsets.symmetric(horizontal: 20, vertical: 5),
       child: InkWell(
         onTap: () {
           scrollController.scrollTo(index: 1, duration: Duration(seconds: 1));

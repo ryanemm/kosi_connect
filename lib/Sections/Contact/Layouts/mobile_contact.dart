@@ -11,6 +11,7 @@ class MobileContact extends StatelessWidget {
   Widget build(BuildContext context) {
     Size _screenSize = MediaQuery.of(context).size;
     return Container(
+      padding: EdgeInsets.only(top: 70),
       color: Colors.white,
       width: _screenSize.width,
       child: Column(
