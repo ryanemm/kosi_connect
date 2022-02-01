@@ -5,6 +5,7 @@ import 'package:kosi_connect/home_screen.dart';
 import "package:outline_gradient_button/outline_gradient_button.dart";
 import "package:kosi_connect/models/services.dart";
 import 'package:kosi_connect/Components/accent_bar_mobile.dart';
+import 'package:scrollable_positioned_list/scrollable_positioned_list.dart';
 
 class ServiceCardMobile extends StatefulWidget {
   const ServiceCardMobile({
@@ -19,6 +20,7 @@ class ServiceCardMobile extends StatefulWidget {
 }
 
 class _ServiceCardMobileState extends State<ServiceCardMobile> {
+  ItemScrollController scrollController = SmallScreen.itemScrollController;
   bool isHover = false;
   Duration duration = Duration(milliseconds: 200);
   @override
@@ -59,7 +61,12 @@ class _ServiceCardMobileState extends State<ServiceCardMobile> {
           ),
           SizedBox(height: 18),
           GestureDetector(
-            onTap: () {},
+            onTap: () {
+              scrollController.scrollTo(
+                  index: 6,
+                  duration: Duration(seconds: 2),
+                  curve: Curves.easeInOutCubic);
+            },
             child: Container(
                 padding: EdgeInsets.symmetric(horizontal: 20),
                 decoration: BoxDecoration(
@@ -74,20 +81,12 @@ class _ServiceCardMobileState extends State<ServiceCardMobile> {
                       colors: [Color(0xFFFFBF00), Colors.orange]),
                   //color: Color(0xFFFFBF00),
                 ),
-                child: TextButton(
-                  onPressed: () {
-                    Navigator.pushReplacement(
-                        context,
-                        MaterialPageRoute(
-                            builder: (context) => ContactPageMobile()));
-                  },
-                  child: Text(
-                    "Enquire",
-                    style: GoogleFonts.nunito(
-                        fontWeight: FontWeight.w300,
-                        color: Color(0xFF003049),
-                        fontSize: 18),
-                  ),
+                child: Text(
+                  "Enquire",
+                  style: GoogleFonts.nunito(
+                      fontWeight: FontWeight.w300,
+                      color: Color(0xFF003049),
+                      fontSize: 18),
                 )),
           ),
         ],

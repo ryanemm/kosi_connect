@@ -8,6 +8,7 @@ import 'package:kosi_connect/Sections/OurProcess/our_process.dart';
 import 'package:kosi_connect/Sections/Services/service_section.dart';
 import 'package:kosi_connect/Sections/RecentWork/recent_work.dart';
 import 'package:kosi_connect/utils/responsiveLayout.dart';
+import 'package:scrollable_positioned_list/scrollable_positioned_list.dart';
 
 import 'Sections/Testimonials/testimonials.dart';
 import 'Sections/TopSection/top_section.dart';
@@ -32,6 +33,10 @@ class _HomeScreenState extends State<HomeScreen> {
 
 class SmallScreen extends StatelessWidget {
   const SmallScreen({Key? key, required this.controller}) : super(key: key);
+  static final ItemScrollController itemScrollController =
+      ItemScrollController();
+  static final ItemPositionsListener itemPositionsListener =
+      ItemPositionsListener.create();
 
   final ScrollController controller;
 
@@ -51,17 +56,21 @@ class SmallScreen extends StatelessWidget {
 
     return Scaffold(
       // appBar: mobileBar(context),
-      drawer: Drawer(
-        child: ListView(
-          padding: EdgeInsets.zero,
-          children: [],
+      drawer: Container(
+        width: 200,
+        child: Drawer(
+          child: ListView(
+            padding: EdgeInsets.zero,
+            children: [],
+          ),
         ),
       ),
       backgroundColor: Colors.grey[200],
       body: Container(
           child: Stack(children: [
-        ListView.builder(
-          controller: controller,
+        ScrollablePositionedList.builder(
+          itemScrollController: itemScrollController,
+          itemPositionsListener: itemPositionsListener,
           itemCount: 8,
           itemBuilder: (BuildContext context, int index) {
             return sectionsDesktop.elementAt(index);

@@ -1,7 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:kosi_connect/home_screen.dart';
 // import 'package:responsive_framework/responsive_wrapper.dart';
-import 'package:responsive_framework/responsive_framework.dart';
 
 void main() {
   runApp(MyApp());

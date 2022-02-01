@@ -1,5 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
+import 'package:scrollable_positioned_list/scrollable_positioned_list.dart';
+
+import '../home_screen.dart';
 
 class SquareButton extends StatefulWidget {
   const SquareButton({
@@ -16,11 +19,14 @@ class SquareButton extends StatefulWidget {
 }
 
 class _SquareButtonState extends State<SquareButton> {
+  ItemScrollController scrollController = SmallScreen.itemScrollController;
   bool _isHover = false;
   Widget build(BuildContext context) {
     return Container(
       child: InkWell(
-        onTap: () {},
+        onTap: () {
+          scrollController.scrollTo(index: 1, duration: Duration(seconds: 1));
+        },
         onHover: (val) {
           setState(() {
             _isHover = val;
@@ -54,15 +60,12 @@ class _SquareButtonState extends State<SquareButton> {
                     spreadRadius: 0)
               ],*/
             ),
-            child: TextButton(
-              onPressed: () {},
-              child: Text(
-                "ABOUT US",
-                style: GoogleFonts.nunito(
-                    fontWeight: FontWeight.w500,
-                    color: Color(0xFF003049),
-                    fontSize: 18),
-              ),
+            child: Text(
+              "ABOUT US",
+              style: GoogleFonts.nunito(
+                  fontWeight: FontWeight.w500,
+                  color: Color(0xFF003049),
+                  fontSize: 18),
             )),
       ),
     );
