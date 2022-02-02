@@ -9,7 +9,7 @@ class MobileAbout extends StatelessWidget {
   Widget build(BuildContext context) {
     return Container(
       color: Colors.white,
-      padding: const EdgeInsets.symmetric(vertical: 80, horizontal: 40),
+      padding: const EdgeInsets.symmetric(vertical: 60, horizontal: 40),
       child: Column(
         crossAxisAlignment: CrossAxisAlignment.center,
         children: [

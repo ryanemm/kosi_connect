@@ -9,7 +9,7 @@ class MobileProcess extends StatelessWidget {
   Widget build(BuildContext context) {
     return Container(
       color: Colors.white,
-      padding: EdgeInsets.only(bottom: 50, top: 30, left: 30, right: 30),
+      padding: EdgeInsets.only(bottom: 0, top: 60, left: 30, right: 30),
       child: Column(
         crossAxisAlignment: CrossAxisAlignment.center,
         children: [

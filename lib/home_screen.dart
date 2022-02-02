@@ -1,4 +1,5 @@
 import "package:flutter/material.dart";
+import 'package:google_fonts/google_fonts.dart';
 import 'package:kosi_connect/Components/nav_bar.dart';
 import 'package:kosi_connect/Components/social_bar.dart';
 import 'package:kosi_connect/Sections/AboutSection/about_section.dart';
@@ -63,11 +64,17 @@ class SmallScreen extends StatelessWidget {
             padding: EdgeInsets.zero,
             children: [
               DrawerHeader(
-                  decoration: BoxDecoration(color: Colors.grey[900]),
+                  decoration: BoxDecoration(color: Colors.grey[800]),
                   padding: EdgeInsets.symmetric(vertical: 8, horizontal: 16),
                   child: Image.asset("assets/images/company_logo.png")),
               ListTile(
-                title: const Text("About Us"),
+                title: Text(
+                  "About Us",
+                  style: GoogleFonts.nunito(
+                    fontWeight: FontWeight.w600,
+                    fontSize: 16,
+                  ),
+                ),
                 onTap: () {
                   Navigator.pop(context);
                   itemScrollController.scrollTo(
@@ -75,7 +82,13 @@ class SmallScreen extends StatelessWidget {
                 },
               ),
               ListTile(
-                title: const Text("Our Services"),
+                title: Text(
+                  "Our Services",
+                  style: GoogleFonts.nunito(
+                    fontWeight: FontWeight.w600,
+                    fontSize: 16,
+                  ),
+                ),
                 onTap: () {
                   Navigator.pop(context);
                   itemScrollController.scrollTo(
@@ -83,7 +96,13 @@ class SmallScreen extends StatelessWidget {
                 },
               ),
               ListTile(
-                title: const Text("Our Process"),
+                title: Text(
+                  "Our Process",
+                  style: GoogleFonts.nunito(
+                    fontWeight: FontWeight.w600,
+                    fontSize: 16,
+                  ),
+                ),
                 onTap: () {
                   Navigator.pop(context);
                   itemScrollController.scrollTo(
@@ -91,7 +110,13 @@ class SmallScreen extends StatelessWidget {
                 },
               ),
               ListTile(
-                title: const Text("Recent Work"),
+                title: Text(
+                  "Recent Work",
+                  style: GoogleFonts.nunito(
+                    fontWeight: FontWeight.w600,
+                    fontSize: 16,
+                  ),
+                ),
                 onTap: () {
                   Navigator.pop(context);
                   itemScrollController.scrollTo(
@@ -99,7 +124,13 @@ class SmallScreen extends StatelessWidget {
                 },
               ),
               ListTile(
-                title: const Text("Testimonials"),
+                title: Text(
+                  "Testimonials",
+                  style: GoogleFonts.nunito(
+                    fontWeight: FontWeight.w600,
+                    fontSize: 16,
+                  ),
+                ),
                 onTap: () {
                   Navigator.pop(context);
                   itemScrollController.scrollTo(
@@ -107,7 +138,13 @@ class SmallScreen extends StatelessWidget {
                 },
               ),
               ListTile(
-                title: const Text("Contact Us"),
+                title: Text(
+                  "Contact Us",
+                  style: GoogleFonts.nunito(
+                    fontWeight: FontWeight.w600,
+                    fontSize: 16,
+                  ),
+                ),
                 onTap: () {
                   Navigator.pop(context);
                   itemScrollController.scrollTo(

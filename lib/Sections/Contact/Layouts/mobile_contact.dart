@@ -11,7 +11,7 @@ class MobileContact extends StatelessWidget {
   Widget build(BuildContext context) {
     Size _screenSize = MediaQuery.of(context).size;
     return Container(
-      padding: EdgeInsets.only(top: 70),
+      padding: EdgeInsets.only(top: 60),
       color: Colors.white,
       width: _screenSize.width,
       child: Column(
@@ -56,7 +56,7 @@ class MobileContact extends StatelessWidget {
               SizedBox(height: 10),
               GestureDetector(
                 onTap: () {
-                  launch("tel:+27 73 016 9018");
+                  launch("tel:+27 73 016 9813");
                 },
                 child: Row(
                   mainAxisAlignment: MainAxisAlignment.center,

@@ -22,6 +22,7 @@ class DesktopContact extends StatelessWidget {
                 fontWeight: FontWeight.w600,
                 color: Color(0xFF003049),
               )),
+          SizedBox(height: 50),
           Row(
             mainAxisAlignment: MainAxisAlignment.center,
             crossAxisAlignment: CrossAxisAlignment.start,

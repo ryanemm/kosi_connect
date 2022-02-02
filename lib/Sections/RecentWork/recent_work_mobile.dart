@@ -15,7 +15,7 @@ class _RecentWorkMobileState extends State<RecentWorkMobile> {
   Widget build(BuildContext context) {
     return Container(
       color: Colors.white,
-      padding: EdgeInsets.only(left: 20, right: 20, top: 40, bottom: 40),
+      padding: EdgeInsets.only(left: 20, right: 20, top: 60, bottom: 0),
       child: Column(
         mainAxisAlignment: MainAxisAlignment.start,
         crossAxisAlignment: CrossAxisAlignment.center,

@@ -59,7 +59,7 @@ class MobileServices extends StatelessWidget {
         ),
         Container(
           color: Colors.white,
-          padding: EdgeInsets.only(left: 30, right: 30, top: 20, bottom: 30),
+          padding: EdgeInsets.only(left: 30, right: 30, top: 20),
           child: Column(
             mainAxisAlignment: MainAxisAlignment.start,
             crossAxisAlignment: CrossAxisAlignment.center,

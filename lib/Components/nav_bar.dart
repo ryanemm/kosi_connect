@@ -103,10 +103,7 @@ PreferredSize mobileBar(BuildContext context) {
                 onTap: () {
                   Scaffold.of(context).openDrawer();
                 },
-                child: Icon(
-                  Icons.menu,
-                  color: Colors.grey[800],
-                ),
+                child: Icon(Icons.menu, color: Colors.grey[800], size: 30),
               );
             })
           ]),

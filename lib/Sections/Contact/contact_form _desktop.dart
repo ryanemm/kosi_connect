@@ -59,8 +59,10 @@ class _ContactFormState extends State<ContactFormDesktop> {
             child: TextField(
               textAlignVertical: TextAlignVertical.center,
               decoration: InputDecoration(
-                prefixIcon:
-                    Icon(Icons.person_outline, color: Color(0xFF003049)),
+                prefixIcon: Icon(
+                  Icons.person_outline,
+                  color: Color(0xFF003049),
+                ),
                 hintText: "Last name",
                 border: InputBorder.none,
                 filled: true,

@@ -85,7 +85,7 @@ class _ContactFormState extends State<ContactForm> {
           ),
           SizedBox(height: 20),
           Container(
-            padding: EdgeInsets.symmetric(horizontal: 20, vertical: 4),
+            padding: EdgeInsets.symmetric(horizontal: 20, vertical: 0),
             decoration: BoxDecoration(
               boxShadow: [
                 BoxShadow(

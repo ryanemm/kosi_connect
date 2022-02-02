@@ -27,6 +27,7 @@ dependencies:
   hovering: ^1.0.4
   url_launcher: ^6.0.9
   scrollable_positioned_list: ^0.2.3
+  http: ^0.13.0
   
 
 dev_dependencies:

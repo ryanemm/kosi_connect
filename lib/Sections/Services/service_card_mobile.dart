@@ -68,7 +68,7 @@ class _ServiceCardMobileState extends State<ServiceCardMobile> {
                   curve: Curves.easeInOutCubic);
             },
             child: Container(
-                padding: EdgeInsets.symmetric(horizontal: 20, vertical: 5),
+                padding: EdgeInsets.symmetric(horizontal: 30, vertical: 10),
                 decoration: BoxDecoration(
                   /*boxShadow: [
                     BoxShadow(
