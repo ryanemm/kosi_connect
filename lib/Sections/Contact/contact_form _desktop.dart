@@ -1,5 +1,7 @@
 import "package:flutter/material.dart";
 import 'package:google_fonts/google_fonts.dart';
+import 'package:kosi_connect/models/form_data.dart';
+import 'package:kosi_connect/controllers/form_controller.dart';
 
 enum Choice { website, mobileapp }
 
