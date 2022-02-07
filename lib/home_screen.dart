@@ -253,6 +253,7 @@ class LargeScreen extends StatelessWidget {
           left: 30,
           child: SocialBar(),
         ),
+        DesktopBar()
       ])),
     );
   }
