@@ -21,7 +21,6 @@ dependencies:
   google_fonts: ^2.1.0
   delayed_display: ^2.0.0
   shape_of_view: ^1.0.2
-  assorted_layout_widgets: ^4.0.10
   outline_gradient_button: ^2.0.0+1
   animated_text_kit: ^4.2.1
   hovering: ^1.0.4

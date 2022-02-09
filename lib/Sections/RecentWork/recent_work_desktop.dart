@@ -5,7 +5,6 @@ import 'package:kosi_connect/Sections/RecentWork/Components/Desktop/project_card
 import 'package:kosi_connect/Sections/RecentWork/Components/Desktop/project_card_2.dart';
 import 'package:kosi_connect/Sections/RecentWork/Components/Desktop/project_card_mobile.dart';
 import "package:shape_of_view/shape_of_view.dart";
-import "package:assorted_layout_widgets/assorted_layout_widgets.dart";
 
 class RecentWorkDesktop extends StatelessWidget {
   @override
