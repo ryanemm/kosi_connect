@@ -56,6 +56,35 @@ class MobileContact extends StatelessWidget {
               SizedBox(height: 10),
               GestureDetector(
                 onTap: () {
+                  launch("tel:+27 67 989 0637");
+                },
+                child: Row(
+                  mainAxisAlignment: MainAxisAlignment.center,
+                  children: [
+                    Text("Tel: ",
+                        style: GoogleFonts.nunito(
+                            fontSize: 18,
+                            fontWeight: FontWeight.w400,
+                            color: Colors.grey[800])),
+                    Text("067 989 0637",
+                        style: GoogleFonts.nunito(
+                          fontSize: 18,
+                          fontWeight: FontWeight.w400,
+                          color: Colors.grey[800],
+                          decoration: TextDecoration.underline,
+                          decorationColor: Colors.grey[800],
+                          decorationThickness: 2,
+                        )),
+                    Icon(
+                      Icons.call,
+                      color: Color(0xFF003049),
+                      // size: 30,
+                    ),
+                  ],
+                ),
+              ),
+              GestureDetector(
+                onTap: () {
                   launch("tel:+27 73 016 9813");
                 },
                 child: Row(
@@ -66,7 +95,7 @@ class MobileContact extends StatelessWidget {
                             fontSize: 18,
                             fontWeight: FontWeight.w400,
                             color: Colors.grey[800])),
-                    Text("073 016 9018",
+                    Text("073 016 9813",
                         style: GoogleFonts.nunito(
                           fontSize: 18,
                           fontWeight: FontWeight.w400,

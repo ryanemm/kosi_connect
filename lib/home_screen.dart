@@ -60,11 +60,13 @@ class SmallScreen extends StatelessWidget {
       drawer: Container(
         width: 200,
         child: Drawer(
+          backgroundColor: Colors.white.withOpacity(0.7),
           child: ListView(
             padding: EdgeInsets.zero,
             children: [
               DrawerHeader(
-                  decoration: BoxDecoration(color: Colors.grey[800]),
+                  decoration:
+                      BoxDecoration(color: Colors.grey[800]?.withOpacity(0.6)),
                   padding: EdgeInsets.symmetric(vertical: 8, horizontal: 16),
                   child: Image.asset("assets/images/company_logo.png")),
               ListTile(
