@@ -1,3 +1,5 @@
+import 'dart:ui';
+
 import "package:flutter/material.dart";
 import 'package:google_fonts/google_fonts.dart';
 import 'package:kosi_connect/Components/nav_bar.dart';
@@ -57,103 +59,105 @@ class SmallScreen extends StatelessWidget {
 
     return Scaffold(
       // appBar: mobileBar(context),
-      drawer: Container(
-        width: 200,
-        child: Drawer(
-          backgroundColor: Colors.white.withOpacity(0.7),
-          child: ListView(
-            padding: EdgeInsets.zero,
-            children: [
-              DrawerHeader(
-                  decoration:
-                      BoxDecoration(color: Colors.grey[800]?.withOpacity(0.6)),
-                  padding: EdgeInsets.symmetric(vertical: 8, horizontal: 16),
-                  child: Image.asset("assets/images/company_logo.png")),
-              ListTile(
-                title: Text(
-                  "About Us",
-                  style: GoogleFonts.nunito(
-                    fontWeight: FontWeight.w600,
-                    fontSize: 16,
+      drawer: BackdropFilter(
+        filter: ImageFilter.blur(sigmaX: 2, sigmaY: 2),
+        child: Container(
+          width: 200,
+          child: Drawer(
+            backgroundColor: Colors.white.withOpacity(0.7),
+            child: ListView(
+              padding: EdgeInsets.zero,
+              children: [
+                DrawerHeader(
+                    decoration: BoxDecoration(color: Colors.grey[800]),
+                    padding: EdgeInsets.symmetric(vertical: 8, horizontal: 16),
+                    child: Image.asset("assets/images/company_logo.png")),
+                ListTile(
+                  title: Text(
+                    "About Us",
+                    style: GoogleFonts.nunito(
+                      fontWeight: FontWeight.w600,
+                      fontSize: 16,
+                    ),
                   ),
+                  onTap: () {
+                    Navigator.pop(context);
+                    itemScrollController.scrollTo(
+                        index: 1, duration: Duration(seconds: 2));
+                  },
                 ),
-                onTap: () {
-                  Navigator.pop(context);
-                  itemScrollController.scrollTo(
-                      index: 1, duration: Duration(seconds: 2));
-                },
-              ),
-              ListTile(
-                title: Text(
-                  "Our Services",
-                  style: GoogleFonts.nunito(
-                    fontWeight: FontWeight.w600,
-                    fontSize: 16,
+                ListTile(
+                  title: Text(
+                    "Our Services",
+                    style: GoogleFonts.nunito(
+                      fontWeight: FontWeight.w600,
+                      fontSize: 16,
+                    ),
                   ),
+                  onTap: () {
+                    Navigator.pop(context);
+                    itemScrollController.scrollTo(
+                        index: 2, duration: Duration(seconds: 1));
+                  },
                 ),
-                onTap: () {
-                  Navigator.pop(context);
-                  itemScrollController.scrollTo(
-                      index: 2, duration: Duration(seconds: 1));
-                },
-              ),
-              ListTile(
-                title: Text(
-                  "Our Process",
-                  style: GoogleFonts.nunito(
-                    fontWeight: FontWeight.w600,
-                    fontSize: 16,
+                ListTile(
+                  title: Text(
+                    "Our Process",
+                    style: GoogleFonts.nunito(
+                      fontWeight: FontWeight.w600,
+                      fontSize: 16,
+                    ),
                   ),
+                  onTap: () {
+                    Navigator.pop(context);
+                    itemScrollController.scrollTo(
+                        index: 3, duration: Duration(seconds: 1));
+                  },
                 ),
-                onTap: () {
-                  Navigator.pop(context);
-                  itemScrollController.scrollTo(
-                      index: 3, duration: Duration(seconds: 1));
-                },
-              ),
-              ListTile(
-                title: Text(
-                  "Recent Work",
-                  style: GoogleFonts.nunito(
-                    fontWeight: FontWeight.w600,
-                    fontSize: 16,
+                ListTile(
+                  title: Text(
+                    "Recent Work",
+                    style: GoogleFonts.nunito(
+                      fontWeight: FontWeight.w600,
+                      fontSize: 16,
+                    ),
                   ),
+                  onTap: () {
+                    Navigator.pop(context);
+                    itemScrollController.scrollTo(
+                        index: 4, duration: Duration(seconds: 1));
+                  },
                 ),
-                onTap: () {
-                  Navigator.pop(context);
-                  itemScrollController.scrollTo(
-                      index: 4, duration: Duration(seconds: 1));
-                },
-              ),
-              ListTile(
-                title: Text(
-                  "Testimonials",
-                  style: GoogleFonts.nunito(
-                    fontWeight: FontWeight.w600,
-                    fontSize: 16,
+                ListTile(
+                  title: Text(
+                    "Testimonials",
+                    style: GoogleFonts.nunito(
+                      fontWeight: FontWeight.w600,
+                      fontSize: 16,
+                    ),
                   ),
+                  onTap: () {
+                    Navigator.pop(context);
+                    itemScrollController.scrollTo(
+                        index: 5, duration: Duration(seconds: 1));
+                  },
                 ),
-                onTap: () {
-                  Navigator.pop(context);
-                  itemScrollController.scrollTo(
-                      index: 5, duration: Duration(seconds: 1));
-                },
-              ),
-              ListTile(
-                title: Text(
-                  "Contact Us",
-                  style: GoogleFonts.nunito(
-                    fontWeight: FontWeight.w600,
-                    fontSize: 16,
+                ListTile(
+                  title: Text(
+                    "Contact Us",
+                    style: GoogleFonts.nunito(
+                      fontWeight: FontWeight.w600,
+                      fontSize: 16,
+                    ),
                   ),
-                ),
-                onTap: () {
-                  Navigator.pop(context);
-                  itemScrollController.scrollTo(
-                      index: 6, duration: Duration(seconds: 1));
-                },
-              )
-            ],
+                  onTap: () {
+                    Navigator.pop(context);
+                    itemScrollController.scrollTo(
+                        index: 6, duration: Duration(seconds: 1));
+                  },
+                )
+              ],
+            ),
           ),
         ),
       ),
