@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:kosi_connect/home_screen.dart';
+import 'package:kosi_connect/parasite.dart';
 // import 'package:responsive_framework/responsive_wrapper.dart';
 
 void main() {

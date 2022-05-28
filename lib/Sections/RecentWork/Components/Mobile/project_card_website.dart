@@ -13,6 +13,40 @@ class ProjectCardWebsite extends StatelessWidget {
           crossAxisAlignment: CrossAxisAlignment.center,
           children: [
             Text(
+              "Pro8.tech",
+              style: GoogleFonts.novaRound(
+                fontSize: 22,
+                fontWeight: FontWeight.w500,
+                color: Color(0xFF003049),
+              ),
+            ),
+            SizedBox(height: 10),
+            Center(
+              child: Image.asset(
+                "assets/images/pro8_tech_mobile.png",
+                width: double.infinity,
+              ),
+            ),
+            SizedBox(height: 10),
+            AccentBarMobile(),
+            SizedBox(height: 10),
+            Container(
+              padding: EdgeInsets.only(top: 8, bottom: 8, left: 8, right: 8),
+              width: double.infinity,
+              child: Text(
+                "The home of Pro8 Innovetics, a pioneer in agricultural technology.",
+                style: GoogleFonts.nunito(
+                  color: Colors.grey[800],
+                  fontSize: 18,
+                  fontWeight: FontWeight.w400,
+                ),
+                textAlign: TextAlign.center,
+              ),
+            ),
+            SizedBox(height: 10),
+            AccentBarMobile(),
+            SizedBox(height: 56),
+            Text(
               "Ellie Whyppe Writes",
               style: GoogleFonts.novaRound(
                 fontSize: 22,

@@ -40,7 +40,7 @@ class _ServiceCardMobileState extends State<ServiceCardMobile> {
             height: 60,
           ),
           SizedBox(height: 6),
-          AccentBarMobile(),
+          // AccentBarMobile(),
           SizedBox(height: 4),
           Text(
             services[widget.index].title,

@@ -59,17 +59,17 @@ class SmallScreen extends StatelessWidget {
 
     return Scaffold(
       // appBar: mobileBar(context),
-      drawer: BackdropFilter(
-        filter: ImageFilter.blur(sigmaX: 2, sigmaY: 2),
-        child: Container(
-          width: 200,
+      drawer: Container(
+        width: 200,
+        child: BackdropFilter(
+          filter: ImageFilter.blur(sigmaX: 2, sigmaY: 2),
           child: Drawer(
-            backgroundColor: Colors.white.withOpacity(0.7),
+            backgroundColor: Colors.white.withOpacity(0.9),
             child: ListView(
               padding: EdgeInsets.zero,
               children: [
                 DrawerHeader(
-                    decoration: BoxDecoration(color: Colors.grey[800]),
+                    decoration: BoxDecoration(color: Colors.grey[900]),
                     padding: EdgeInsets.symmetric(vertical: 8, horizontal: 16),
                     child: Image.asset("assets/images/company_logo.png")),
                 ListTile(
