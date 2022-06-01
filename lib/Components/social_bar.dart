@@ -15,7 +15,7 @@ class _SocialBarState extends State<SocialBar> {
     return Container(
       child: Column(
         children: [
-          AnimatedContainer(
+          /*AnimatedContainer(
             height: 70,
             width: 70,
             duration: Duration(milliseconds: 200),
@@ -30,7 +30,7 @@ class _SocialBarState extends State<SocialBar> {
                 });
               },
             ),
-          ),
+          ),*/
           AnimatedContainer(
             height: 70,
             width: 70,
@@ -38,14 +38,14 @@ class _SocialBarState extends State<SocialBar> {
             padding: EdgeInsets.all(isHoverTwitter ? 0 : 20),
             child: InkWell(
                 child: Image.asset("assets/images/logos/twitter.png"),
-                onTap: () => launch("https://twitter.com/EmasonRyan"),
+                onTap: () => launch("https://twitter.com/KosiConnect"),
                 onHover: (val) {
                   setState(() {
                     isHoverTwitter = val;
                   });
                 }),
           ),
-          AnimatedContainer(
+          /*AnimatedContainer(
             height: 70,
             width: 70,
             duration: Duration(milliseconds: 200),
@@ -60,7 +60,7 @@ class _SocialBarState extends State<SocialBar> {
                     isHoverLinkedin = val;
                   });
                 }),
-          ),
+          ),*/
           SizedBox(height: 12),
           Container(
             height: 70,
