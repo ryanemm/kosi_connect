@@ -2,13 +2,17 @@ import 'package:animated_text_kit/animated_text_kit.dart';
 import "package:flutter/material.dart";
 import 'package:google_fonts/google_fonts.dart';
 import 'package:kosi_connect/Components/flat_button.dart';
+import 'package:kosi_connect/home_screen.dart';
 import 'package:outline_gradient_button/outline_gradient_button.dart';
+import 'package:scrollable_positioned_list/scrollable_positioned_list.dart';
 import 'package:shape_of_view/shape_of_view.dart';
 
 class DesktopHeroSection extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     Size screenSize = MediaQuery.of(context).size;
+    ItemScrollController itemScrollController =
+        LargeScreen.itemScrollControllerDesktop;
     return Container(
       padding: EdgeInsets.only(bottom: 15),
       color: Colors.white,
@@ -91,8 +95,14 @@ class DesktopHeroSection extends StatelessWidget {
                     ],
                   ),
                   SizedBox(height: 40),
-                  SimpleButton(
-                    text: "ABOUT US",
+                  InkWell(
+                    onTap: () {
+                      itemScrollController.scrollTo(
+                          index: 1, duration: Duration(seconds: 1));
+                    },
+                    child: SimpleButton(
+                      text: "ABOUT US",
+                    ),
                   )
                 ],
               ),

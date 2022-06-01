@@ -2,11 +2,17 @@ import 'package:animated_text_kit/animated_text_kit.dart';
 import "package:flutter/material.dart";
 import "package:google_fonts/google_fonts.dart";
 import 'package:kosi_connect/Sections/Services/service_card.dart';
+import 'package:kosi_connect/home_screen.dart';
+import 'package:scrollable_positioned_list/scrollable_positioned_list.dart';
 import "package:shape_of_view/shape_of_view.dart";
 
 class DesktopServices extends StatelessWidget {
+  static ItemScrollController itemScrollController =
+      LargeScreen.itemScrollControllerDesktop;
   @override
   Widget build(BuildContext context) {
+    ItemScrollController itemScrollController =
+        LargeScreen.itemScrollControllerDesktop;
     Size _screenSize = MediaQuery.of(context).size;
     return Container(
       color: Colors.white,

@@ -26,7 +26,7 @@ class _HomeScreenState extends State<HomeScreen> {
   Widget build(BuildContext context) {
     Size _screenSize = MediaQuery.of(context).size;
     return ResponsiveLayout(
-        largeScreen: LargeScreen(),
+        largeScreen: LargeScreen(controller: ScrollController()),
         mediumScreen: MediumScreen(),
         smallScreen: SmallScreen(
           controller: ScrollController(),
@@ -225,7 +225,14 @@ class MediumScreen extends StatelessWidget {
 }
 
 class LargeScreen extends StatelessWidget {
-  const LargeScreen({Key? key}) : super(key: key);
+  const LargeScreen({Key? key, required this.controller}) : super(key: key);
+
+  static final ItemScrollController itemScrollControllerDesktop =
+      ItemScrollController();
+  static final ItemPositionsListener itemPositionsListenerDesktop =
+      ItemPositionsListener.create();
+
+  final ScrollController controller;
 
   @override
   Widget build(BuildContext context) {
@@ -244,16 +251,13 @@ class LargeScreen extends StatelessWidget {
       backgroundColor: Colors.grey[200],
       body: Container(
           child: Stack(children: [
-        Scrollbar(
-          isAlwaysShown: true,
-          showTrackOnHover: true,
-          child: ListView.builder(
+        ScrollablePositionedList.builder(
             itemCount: 8,
+            itemScrollController: itemScrollControllerDesktop,
+            itemPositionsListener: itemPositionsListenerDesktop,
             itemBuilder: (BuildContext context, int index) {
               return sectionsDesktop.elementAt(index);
-            },
-          ),
-        ),
+            }),
         Positioned(
           bottom: 0,
           left: 30,

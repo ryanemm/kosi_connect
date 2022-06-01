@@ -2,8 +2,10 @@ import 'dart:ui';
 
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
+import 'package:kosi_connect/home_screen.dart';
 import 'package:kosi_connect/utils/responsiveLayout.dart';
 import 'package:outline_gradient_button/outline_gradient_button.dart';
+import 'package:scrollable_positioned_list/scrollable_positioned_list.dart';
 
 class DesktopBar extends StatefulWidget {
   const DesktopBar({Key? key}) : super(key: key);
@@ -16,6 +18,8 @@ class _DesktopBarState extends State<DesktopBar> {
   bool isHover = false;
   @override
   Widget build(BuildContext context) {
+    ItemScrollController itemScrollController =
+        LargeScreen.itemScrollControllerDesktop;
     return PreferredSize(
       preferredSize: Size.fromHeight(70),
       child: ClipRect(
@@ -36,14 +40,23 @@ class _DesktopBarState extends State<DesktopBar> {
                 child: Row(
                   mainAxisAlignment: MainAxisAlignment.end,
                   children: [
-                    Text(
-                      "Services",
-                      style: GoogleFonts.nunito(
-                          color: Color(0xFF003049), fontSize: 20),
+                    InkWell(
+                      onTap: () {
+                        itemScrollController.scrollTo(
+                            index: 2, duration: Duration(seconds: 1));
+                      },
+                      child: Text(
+                        "Services",
+                        style: GoogleFonts.nunito(
+                            color: Color(0xFF003049), fontSize: 20),
+                      ),
                     ),
                     SizedBox(width: 50),
                     InkWell(
-                        onTap: () {},
+                        onTap: () {
+                          itemScrollController.scrollTo(
+                              index: 6, duration: Duration(seconds: 1));
+                        },
                         onHover: (val) {
                           setState(() {
                             isHover = val;
