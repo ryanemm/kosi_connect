@@ -18,13 +18,16 @@ class MobileServices extends StatelessWidget {
               Center(
                   child: Column(
                 children: [
-                  Text(
-                    "HOW CAN WE GROW YOUR BUSINESS?",
-                    style: GoogleFonts.novaRound(
-                        fontSize: 26,
-                        fontWeight: FontWeight.w500,
-                        color: Colors.white),
-                    textAlign: TextAlign.center,
+                  Container(
+                    padding: EdgeInsets.symmetric(horizontal: 20),
+                    child: Text(
+                      "HOW CAN WE GROW YOUR BUSINESS?",
+                      style: GoogleFonts.novaRound(
+                          fontSize: 26,
+                          fontWeight: FontWeight.w500,
+                          color: Colors.white),
+                      textAlign: TextAlign.center,
+                    ),
                   ),
                   SizedBox(height: 10),
                   AnimatedTextKit(

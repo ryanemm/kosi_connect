@@ -4,6 +4,17 @@ import "package:kosi_connect/Components/accent_bar.dart";
 import 'package:kosi_connect/Components/accent_bar_mobile.dart';
 
 class TestimonialMobile extends StatelessWidget {
+  const TestimonialMobile(
+      {Key? key,
+      required this.testimonial,
+      required this.name,
+      required this.company})
+      : super(key: key);
+
+  final String testimonial;
+  final String name;
+  final String company;
+
   @override
   Widget build(BuildContext context) {
     Size _screenSize = MediaQuery.of(context).size;
@@ -15,27 +26,37 @@ class TestimonialMobile extends StatelessWidget {
         children: [
           AccentBarMobile(),
           SizedBox(height: 10),
-          Text(
-            "\"The team are excellent  web designers and sharp developers. They were extremely pleasant to work with and involved me in the development process. Always willing to go the extra mile to meet your exact requirements\"",
-            textAlign: TextAlign.center,
-            softWrap: true,
-            style: GoogleFonts.nunito(
-              fontSize: 18,
-              color: Colors.grey[800],
-              fontWeight: FontWeight.w400,
+          Container(
+            width: 200,
+            child: Text(
+              testimonial,
+              textAlign: TextAlign.center,
+              softWrap: true,
+              style: GoogleFonts.nunito(
+                fontSize: 18,
+                color: Colors.grey[800],
+                fontWeight: FontWeight.w400,
+              ),
             ),
           ),
           SizedBox(height: 10),
           AccentBarMobile(),
           SizedBox(height: 15),
           Text(
-            "- Melissa Whyppe \n Ellie Whyppe Writes",
+            name,
             style: GoogleFonts.nunito(
                 fontWeight: FontWeight.w600,
                 color: Colors.grey[800],
                 fontSize: 16),
           ),
-          SizedBox(height: 15),
+          SizedBox(height: 8),
+          Text(
+            company,
+            style: GoogleFonts.nunito(
+                fontWeight: FontWeight.w600,
+                color: Colors.grey[800],
+                fontSize: 16),
+          ),
         ],
       ),
     );

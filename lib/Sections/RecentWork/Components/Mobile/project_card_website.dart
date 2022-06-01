@@ -1,6 +1,7 @@
 import "package:flutter/material.dart";
 import 'package:google_fonts/google_fonts.dart';
 import 'package:kosi_connect/Components/accent_bar_mobile.dart';
+import 'package:url_launcher/url_launcher.dart';
 
 class ProjectCardWebsite extends StatelessWidget {
   @override
@@ -12,12 +13,15 @@ class ProjectCardWebsite extends StatelessWidget {
           mainAxisAlignment: MainAxisAlignment.start,
           crossAxisAlignment: CrossAxisAlignment.center,
           children: [
-            Text(
-              "Pro8.tech",
-              style: GoogleFonts.novaRound(
-                fontSize: 22,
-                fontWeight: FontWeight.w500,
-                color: Color(0xFF003049),
+            GestureDetector(
+              onTap: () => launch("https://pro8.tech"),
+              child: Text(
+                "Pro8.tech",
+                style: GoogleFonts.novaRound(
+                  fontSize: 22,
+                  fontWeight: FontWeight.w500,
+                  color: Color(0xFF003049),
+                ),
               ),
             ),
             SizedBox(height: 10),
@@ -44,7 +48,36 @@ class ProjectCardWebsite extends StatelessWidget {
               ),
             ),
             SizedBox(height: 10),
-            AccentBarMobile(),
+            GestureDetector(
+              onTap: () => launch("https://pro8.tech"),
+              child: Container(
+                width: 200,
+                padding: EdgeInsets.only(top: 6, bottom: 6, left: 6, right: 6),
+                decoration: BoxDecoration(
+                  gradient: LinearGradient(
+                      colors: [Color(0xFFFFBF00), Colors.orange]),
+                ),
+                child: (Row(
+                  mainAxisAlignment: MainAxisAlignment.center,
+                  children: [
+                    Icon(
+                      Icons.remove_red_eye,
+                      color: Color(0xFF003049),
+                    ),
+                    SizedBox(width: 4),
+                    Text(
+                      "View Project",
+                      style: GoogleFonts.nunito(
+                          fontSize: 16,
+                          fontWeight: FontWeight.w600,
+                          color: Color(0xFF003049)),
+                    ),
+                  ],
+                )),
+              ),
+            ),
+            SizedBox(height: 6),
+            // AccentBarMobile(),
             SizedBox(height: 56),
             Text(
               "Ellie Whyppe Writes",

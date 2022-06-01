@@ -1,6 +1,7 @@
 import 'package:animated_text_kit/animated_text_kit.dart';
 import "package:flutter/material.dart";
 import 'package:google_fonts/google_fonts.dart';
+import 'package:kosi_connect/Sections/RecentWork/Components/Desktop/project_card_3.dart';
 import 'package:kosi_connect/Sections/RecentWork/Components/Desktop/project_card_mac.dart';
 import 'package:kosi_connect/Sections/RecentWork/Components/Desktop/project_card_2.dart';
 import 'package:kosi_connect/Sections/RecentWork/Components/Desktop/project_card_mobile.dart';
@@ -39,6 +40,8 @@ class RecentWorkDesktop extends StatelessWidget {
                   ),
                 ),
               ),
+              SizedBox(height: 100),
+              ProjectCard3(),
               SizedBox(height: 100),
               ProjectCard2(),
             ],
