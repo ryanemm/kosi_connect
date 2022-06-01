@@ -33,7 +33,6 @@ class DesktopContact extends StatelessWidget {
                   mainAxisAlignment: MainAxisAlignment.start,
                   crossAxisAlignment: CrossAxisAlignment.start,
                   children: [
-                    SizedBox(height: 20),
                     Text(
                       "Address",
                       style: GoogleFonts.novaRound(
@@ -43,9 +42,33 @@ class DesktopContact extends StatelessWidget {
                     ),
                     SizedBox(height: 20),
                     Text(
+                      "64 Steenkamp Street, Del Jundor,",
+                      style: GoogleFonts.nunito(
+                          fontSize: 18,
+                          fontWeight: FontWeight.w400,
+                          color: Colors.grey[800]),
+                    ),
+                    SizedBox(height: 10),
+                    Text(
+                      "Witbank, 1044",
+                      style: GoogleFonts.nunito(
+                          fontSize: 18,
+                          fontWeight: FontWeight.w400,
+                          color: Colors.grey[800]),
+                    ),
+                    SizedBox(height: 10),
+                    Text(
+                      "Mpumalanga",
+                      style: GoogleFonts.nunito(
+                          fontSize: 18,
+                          fontWeight: FontWeight.w400,
+                          color: Colors.grey[800]),
+                    ),
+                    SizedBox(height: 24),
+                    Text(
                       "372 Long Homes, Umjindi,",
                       style: GoogleFonts.nunito(
-                          fontSize: 20,
+                          fontSize: 18,
                           fontWeight: FontWeight.w500,
                           color: Colors.grey[800]),
                     ),
@@ -53,7 +76,7 @@ class DesktopContact extends StatelessWidget {
                     Text(
                       "Barberton, 1300",
                       style: GoogleFonts.nunito(
-                          fontSize: 20,
+                          fontSize: 18,
                           fontWeight: FontWeight.w500,
                           color: Colors.grey[800]),
                     ),
@@ -61,37 +84,176 @@ class DesktopContact extends StatelessWidget {
                     Text(
                       "Mpumalanga",
                       style: GoogleFonts.nunito(
-                          fontSize: 20,
+                          fontSize: 18,
                           fontWeight: FontWeight.w500,
                           color: Colors.grey[800]),
                     ),
-                    SizedBox(height: 10),
-                    GestureDetector(
-                      onTap: () {
-                        launch("tel:+27 73 016 9018");
-                      },
-                      child: Row(
-                        mainAxisAlignment: MainAxisAlignment.start,
-                        children: [
-                          Text("073 016 9018",
-                              style: GoogleFonts.nunito(
-                                fontSize: 20,
-                                fontWeight: FontWeight.w500,
-                                color: Colors.grey[800],
-                              )),
-                          Icon(
-                            Icons.call,
-                            color: Colors.grey[800],
-                            size: 30,
-                          ),
-                        ],
-                      ),
+                    SizedBox(height: 24),
+                    Text(
+                      "12816/6 Motsumi Street, Umjindi,",
+                      style: GoogleFonts.nunito(
+                          fontSize: 18,
+                          fontWeight: FontWeight.w400,
+                          color: Colors.grey[800]),
                     ),
+                    SizedBox(height: 10),
+                    Text(
+                      "Dobsonville, 1300",
+                      style: GoogleFonts.nunito(
+                          fontSize: 18,
+                          fontWeight: FontWeight.w400,
+                          color: Colors.grey[800]),
+                    ),
+                    SizedBox(height: 10),
+                    Text(
+                      "Soweto",
+                      style: GoogleFonts.nunito(
+                          fontSize: 18,
+                          fontWeight: FontWeight.w400,
+                          color: Colors.grey[800]),
+                    ),
+                    SizedBox(height: 24),
                     Image.asset("assets/images/skyline_grey.png")
                   ],
                 ),
               ),
-              Expanded(flex: 1, child: ContactFormDesktop())
+              Expanded(
+                  flex: 1,
+                  child: Column(
+                    crossAxisAlignment: CrossAxisAlignment.start,
+                    children: [
+                      InkWell(
+                        onTap: () {
+                          launch(
+                              "mailto:ryan@kosiconnect.co.za? subject=Enquiry");
+                        },
+                        child: Row(
+                          mainAxisAlignment: MainAxisAlignment.start,
+                          children: [
+                            Text("ryan@kosiconnect.co.za",
+                                style: GoogleFonts.nunito(
+                                  fontSize: 18,
+                                  fontWeight: FontWeight.w400,
+                                  color: Colors.grey[800],
+                                  decoration: TextDecoration.underline,
+                                  decorationColor: Colors.grey[800],
+                                  decorationThickness: 2,
+                                )),
+                            Icon(
+                              Icons.email_rounded,
+                              color: Color(0xFF003049),
+                              // size: 30,
+                            ),
+                          ],
+                        ),
+                      ),
+                      SizedBox(height: 10),
+                      InkWell(
+                        onTap: () {
+                          launch(
+                              "mailto:kayn@kosiconnect.co.za? subject=Enquiry");
+                        },
+                        child: Row(
+                          mainAxisAlignment: MainAxisAlignment.start,
+                          children: [
+                            Text("kayn@kosiconnect.co.za",
+                                style: GoogleFonts.nunito(
+                                  fontSize: 18,
+                                  fontWeight: FontWeight.w400,
+                                  color: Colors.grey[800],
+                                  decoration: TextDecoration.underline,
+                                  decorationColor: Colors.grey[800],
+                                  decorationThickness: 2,
+                                )),
+                            Icon(
+                              Icons.email_rounded,
+                              color: Color(0xFF003049),
+                              // size: 30,
+                            ),
+                          ],
+                        ),
+                      ),
+                      SizedBox(height: 10),
+                      Row(
+                        mainAxisAlignment: MainAxisAlignment.start,
+                        children: [
+                          InkWell(
+                            onTap: () {
+                              launch("tel:+27 73 016 9813");
+                            },
+                            child: Row(
+                              mainAxisAlignment: MainAxisAlignment.start,
+                              children: [
+                                SizedBox(height: 10),
+                                Text("073 016 9813",
+                                    style: GoogleFonts.nunito(
+                                      fontSize: 18,
+                                      fontWeight: FontWeight.w400,
+                                      color: Colors.grey[800],
+                                      decoration: TextDecoration.underline,
+                                      decorationColor: Colors.grey[800],
+                                      decorationThickness: 2,
+                                    )),
+                                Icon(
+                                  Icons.call,
+                                  color: Color(0xFF003049),
+                                  // size: 30,
+                                ),
+                              ],
+                            ),
+                          ),
+                          SizedBox(width: 16),
+                          InkWell(
+                            onTap: () {
+                              launch("https://wa.me/+27730169813");
+                            },
+                            child: Image.asset("assets/images/whatsapp.png",
+                                height: 24),
+                          )
+                        ],
+                      ),
+                      SizedBox(height: 10),
+                      Row(
+                        mainAxisAlignment: MainAxisAlignment.start,
+                        children: [
+                          InkWell(
+                            onTap: () {
+                              launch("tel:+27 67 989 0637");
+                            },
+                            child: Row(
+                              mainAxisAlignment: MainAxisAlignment.center,
+                              children: [
+                                Text("067 989 0637",
+                                    style: GoogleFonts.nunito(
+                                      fontSize: 18,
+                                      fontWeight: FontWeight.w400,
+                                      color: Colors.grey[800],
+                                      decoration: TextDecoration.underline,
+                                      decorationColor: Colors.grey[800],
+                                      decorationThickness: 2,
+                                    )),
+                                Icon(
+                                  Icons.call,
+                                  color: Color(0xFF003049),
+                                  // size: 30,
+                                ),
+                              ],
+                            ),
+                          ),
+                          SizedBox(width: 16),
+                          InkWell(
+                            onTap: () {
+                              launch("https://wa.me/+27679890637");
+                            },
+                            child: Image.asset("assets/images/whatsapp.png",
+                                height: 24),
+                          )
+                        ],
+                      ),
+                      SizedBox(height: 10),
+                      ContactFormDesktop(),
+                    ],
+                  ))
             ],
           ),
         ],
